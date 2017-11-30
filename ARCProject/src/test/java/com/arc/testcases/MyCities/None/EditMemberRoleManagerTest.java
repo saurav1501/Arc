@@ -16,7 +16,7 @@ import com.arc.driver.CommonMethod;
 public class EditMemberRoleManagerTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.cities.LoginCaseTest.loginCase","com.arc.testcases.cities.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.cities.PaymentbyCCTest.paymentbyCC","com.arc.testcases.cities.AddTeamMemberTest.addTeamMember" })
+	@Test(dependsOnMethods = { "com.arc.testcases.MyCities.None.LoginCaseTest.loginCase","com.arc.testcases.MyCities.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCities.None.PaymentbyCCTest.paymentbyCC","com.arc.testcases.MyCities.None.AddTeamMemberTest.addTeamMember" })
 	@Parameters({"rowNum" ,"loginSheet","citySheet"})
 	public void editMemberRoleManager(int rowNum, String loginSheet, String citySheet) throws IOException {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
