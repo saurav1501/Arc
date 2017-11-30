@@ -16,7 +16,7 @@ import com.arc.driver.CommonMethod;
 public class TeamMemberCreditAssertionTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.Login.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.None.PublicSearch.SearchProgramTest.searchProgram","com.arc.testcases.MyBuildings.None.PublicSearch.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.None.AddProject.PaymentbyCCTest.paymentbyCC" })
+	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.Login.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.None.AddProject.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
 	public void TeamMemberCreditAssertion(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
