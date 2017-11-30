@@ -375,4 +375,3 @@ com\arc\testcases\MyBuildings\LEED\AddNewProjectTest.class
 com\arc\testcases\MyBuildings\None\ProjectFieldVerificationTest.class
 com\arc\testcases\MyCommunities\Other\LoginInvaildValuesTest.class
 com\arc\testcases\MyCities\Other\PrerequisitesAttemptTest.class
-com\arc\testcases\MyBuildings\LEEDfortransit\VerifyRequirementsCompleteTest.class
