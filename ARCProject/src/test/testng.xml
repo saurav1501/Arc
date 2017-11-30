@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SanityTestCasesSuite">
+
+
+<listeners>
+        <listener class-name="com.arc.driver.ExtentReportNG" />
+         <listener class-name="com.arc.driver.RetryListener"></listener> 
+</listeners>
+
+   
+<test name="ARCRegressionTest-Building">
+
+<!-- pass data on below parameters before executing test suite -->
+<parameter name="browserName" value="firefox"/>
+<parameter name="environment" value="staging"/>
+<parameter name="rowNum" value="2"/>
+<parameter name="loginSheet" value="Login"/>
+<parameter name="buildingSheet" value="NewBuildingProject"/>
+<parameter name="paymentSheet" value="Payment"/>
+<parameter name="energySheet" value="BEnergy"/>
+<parameter name="teamSheet" value="BTeam"/>
+<parameter name="waterSheet" value="BWater"/>
+<parameter name="wasteSheet" value="BWaste"/>
+
+
+<classes>
+<class name="com.arc.testcases.MyBuildings.LEED.LoginCaseTest"></class>
+</classes>
+</test>
+
+</suite> 
+  
+
+
+

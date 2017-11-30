@@ -1,0 +1,296 @@
+<html>
+<head>
+<title>TestNG:  ARCRegressionTest-None-for-Communities</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ARCRegressionTest-None-for-Communities</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/6</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Nov 26 16:35:32 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>600 seconds (600433 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.arc.testcases.MyCommunities.None.EnergyMeterCreateTest.energyMeterCreate()'><b>energyMeterCreate</b><br>Test class: com.arc.testcases.MyCommunities.None.EnergyMeterCreateTest<br>Parameters: 4, Login, NewCommunityProject, CDataInput</td>
+<td></td>
+<td>115</td>
+<td>com.arc.testcases.MyCommunities.None.EnergyMeterCreateTest@56235b8e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.arc.testcases.MyCommunities.None.AdditionalDeatilsCreateMeterTest.aditioanalFieldMeterCreate()'><b>aditioanalFieldMeterCreate</b><br>Test class: com.arc.testcases.MyCommunities.None.AdditionalDeatilsCreateMeterTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;citySheet&apos; is required by @Test on method aditioanalFieldMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1343835789", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1343835789'><pre>org.testng.TestNGException: 
+Parameter &apos;citySheet&apos; is required by @Test on method aditioanalFieldMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.arc.testcases.MyCommunities.None.AdditionalDeatilsCreateMeterTest@527740a2</td></tr>
+<tr>
+<td title='com.arc.testcases.MyCommunities.None.HumanExpCreateSurveyTest.humanExperienceMeterCreate()'><b>humanExperienceMeterCreate</b><br>Test class: com.arc.testcases.MyCommunities.None.HumanExpCreateSurveyTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;citySheet&apos; is required by @Test on method humanExperienceMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace627746290", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace627746290'><pre>org.testng.TestNGException: 
+Parameter &apos;citySheet&apos; is required by @Test on method humanExperienceMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.arc.testcases.MyCommunities.None.HumanExpCreateSurveyTest@6d7b4f4c</td></tr>
+<tr>
+<td title='com.arc.testcases.MyCommunities.None.TrasnsportionCreateMeterTest.transprotionMeterCreate()'><b>transprotionMeterCreate</b><br>Test class: com.arc.testcases.MyCommunities.None.TrasnsportionCreateMeterTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;citySheet&apos; is required by @Test on method transprotionMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace131301148", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace131301148'><pre>org.testng.TestNGException: 
+Parameter &apos;citySheet&apos; is required by @Test on method transprotionMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.arc.testcases.MyCommunities.None.TrasnsportionCreateMeterTest@4e9ba398</td></tr>
+<tr>
+<td title='com.arc.testcases.MyCommunities.None.WasteGenerationMeterCreateTest.wasteMeterCreate()'><b>wasteMeterCreate</b><br>Test class: com.arc.testcases.MyCommunities.None.WasteGenerationMeterCreateTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;citySheet&apos; is required by @Test on method wasteMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace525527919", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace525527919'><pre>org.testng.TestNGException: 
+Parameter &apos;citySheet&apos; is required by @Test on method wasteMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.arc.testcases.MyCommunities.None.WasteGenerationMeterCreateTest@5abca1e0</td></tr>
+<tr>
+<td title='com.arc.testcases.MyCommunities.None.WastediversionMeterCreateTest.wasteMeterCreate()'><b>wasteMeterCreate</b><br>Test class: com.arc.testcases.MyCommunities.None.WastediversionMeterCreateTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;citySheet&apos; is required by @Test on method wasteMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace911561694", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace911561694'><pre>org.testng.TestNGException: 
+Parameter &apos;citySheet&apos; is required by @Test on method wasteMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.arc.testcases.MyCommunities.None.WastediversionMeterCreateTest@2286778</td></tr>
+<tr>
+<td title='com.arc.testcases.MyCommunities.None.WaterMeterCreateTest.waterMeterCreate()'><b>waterMeterCreate</b><br>Test class: com.arc.testcases.MyCommunities.None.WaterMeterCreateTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;citySheet&apos; is required by @Test on method waterMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1415979460", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1415979460'><pre>org.testng.TestNGException: 
+Parameter &apos;citySheet&apos; is required by @Test on method waterMeterCreate but has not been marked @Optional or defined
+in C:\Users\Lenovo\Documents\Abhishek\ARCProject\src\main\resources\TestNg-Community.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.arc.testcases.MyCommunities.None.WaterMeterCreateTest@3632be31</td></tr>
+</table><p>
+</body>
+</html>
