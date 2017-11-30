@@ -79,8 +79,8 @@
 <class name="com.arc.testcases.MyCommunities.Other.SearchProgramTest"></class>
 <class name="com.arc.testcases.MyCommunities.Other.ClickSearchedProgramTest"></class>
 <class name="com.arc.testcases.MyCommunities.Other.PaymentbyCCTest"></class> -->
-<!-- <class name="com.arc.testcases.MyCommunities.Other.EnergyMeterCreateTest"></class>
-<class name="com.arc.testcases.MyCommunities.Other.WaterMeterCreateTest"></class> -->
+<class name="com.arc.testcases.MyCommunities.Other.EnergyMeterCreateTest"></class>
+<class name="com.arc.testcases.MyCommunities.Other.WaterMeterCreateTest"></class>
 <class name="com.arc.testcases.MyCommunities.Other.WasteGenerationMeterCreateTest"></class>
 <class name="com.arc.testcases.MyCommunities.Other.WastediversionMeterCreateTest"></class>
 <class name="com.arc.testcases.MyCommunities.Other.TrasnsportionCreateMeterTest"></class>
