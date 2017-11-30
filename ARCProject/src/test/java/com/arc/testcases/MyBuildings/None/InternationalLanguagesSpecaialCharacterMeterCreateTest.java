@@ -13,7 +13,7 @@ import com.arc.driver.CommonMethod;
 
 public class InternationalLanguagesSpecaialCharacterMeterCreateTest extends BaseClass {
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgramTest","com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCCTest" })
+	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.None.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.None.PaymentbyCCTest.paymentbyCC"})
 	@Parameters({"rowNum" ,"buildingSheet" ,"loginSheet"})
 	public void energyMeterCreate(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
