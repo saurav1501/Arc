@@ -14,7 +14,7 @@ import com.arc.driver.CommonMethod;
 
 public class AddNewProjectINDTest extends BaseClass {
 	
-	@Test(dependsOnMethods={"com.arc.testcases.MyBuildings.Other.LoginCaseTest.loginCaseTest"})
+	@Test(dependsOnMethods={"com.arc.testcases.MyBuildings.Other.LoginCaseTest.loginCase"})
 	@Parameters({"rowNum" ,"loginSheet","buildingSheet"})
 	public void addNewProjectTest(int rowNum, String buildingSheet) throws IOException {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
