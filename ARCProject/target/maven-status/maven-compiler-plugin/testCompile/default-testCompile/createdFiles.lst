@@ -109,7 +109,6 @@ com\arc\testcases\MyBuildings\LEED\EditMemberRoleManagerTest.class
 com\arc\testcases\MyCommunities\None\WasteGenerationMeterCreateTest.class
 com\arc\testcases\MyCities\LEEDforCities\VerifyCertificationStatusTest.class
 com\arc\testcases\MyCities\LEEDforCities\LoginCaseTest.class
-com\arc\testcases\MyCommunities\Other\WasteMeterEditReadingTest.class
 com\arc\testcases\MyCommunities\LEEDforCommunities\AdditionalDeatilsCreateMeterTest.class
 com\arc\testcases\MyCities\LEEDforCities\WastediversionMeterCreateTest.class
 com\arc\testcases\MyCommunities\LEEDforCommunities\WasteMeterEditReadingTest.class
