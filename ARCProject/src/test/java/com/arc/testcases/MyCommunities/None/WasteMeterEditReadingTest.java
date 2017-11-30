@@ -16,7 +16,7 @@ import com.arc.driver.CommonMethod;
 public class WasteMeterEditReadingTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyCommunities.None.LoginCaseTest.loginCase","com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCommunities.None.sPaymentbyCCTest.paymentbyCC" })
+	@Test(dependsOnMethods = { "com.arc.testcases.MyCommunities.None.LoginCaseTest.loginCase","com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyCommunities.None.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"loginSheet","communitySheet"})
 	public void wasteMeterEditReading(int rowNum, String loginSheet, String communitySheet) throws IOException {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
