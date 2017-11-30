@@ -25,7 +25,7 @@
 <parameter name="citySheet" value="NewCityProject"/>
 <classes>
 
- <class name="com.arc.testcases.MyBuildings.LEED.LoginCaseTest"></class>
+ <!-- <class name="com.arc.testcases.MyBuildings.LEED.LoginCaseTest"></class> -->
  <!-- <class name="com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest"></class>
  <class name="com.arc.testcases.MyBuildings.LEED.AddNewProjectTest"></class>
 <class name="com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest"></class>

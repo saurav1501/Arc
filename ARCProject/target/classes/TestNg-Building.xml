@@ -78,7 +78,7 @@
 
 <classes>
  
-<!-- 
+ 
 <class name="com.arc.testcases.MyBuildings.None.LoginCaseTest"></class>
 <class name="com.arc.testcases.MyBuildings.None.AddNewProjectTest"></class>
 <class name="com.arc.testcases.MyBuildings.None.ClickSearchedProgramTest"></class>
@@ -104,7 +104,7 @@
 <class name="com.arc.testcases.MyBuildings.None.WasteReadingDateOverlappingTest"></class>
 <class name="com.arc.testcases.MyBuildings.None.PerformanceScoreVerificationReviewTest"/>
 
-   -->
+   
 </classes>
 </test>
 
@@ -122,7 +122,7 @@
 <parameter name="wasteSheet" value="BWaste"/>
 
 <classes>
-<!-- 
+
 <class name="com.arc.testcases.MyBuildings.Other.LoginCaseTest"></class>
 <class name="com.arc.testcases.MyBuildings.Other.AddNewProjectTest"></class>
 <class name="com.arc.testcases.MyBuildings.Other.ClickSearchedProgramTest"></class>
@@ -150,7 +150,7 @@
 <class name="com.arc.testcases.MyBuildings.Other.WTotalAnalyticsTest"/>
 <class name="com.arc.testcases.MyBuildings.Other.BillingStatusVerificationTest"></class>
 <class name="com.arc.testcases.MyBuildings.Other.PerformanceScoreVerificationReviewTest"/>
-  		 -->
+  		 
 </classes>
 </test>
 
@@ -170,7 +170,7 @@
 <parameter name="wasteSheet" value="BWaste"/>
 
 <classes>
-<!-- 
+
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.LoginCaseTest"></class>
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.AbovegroundAddNewProjectTest"/>
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.ClickSearchedProgramTest"></class>
@@ -205,7 +205,7 @@
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.PreCertReviewTest"/>
 <class name="com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest"/>
 
- --></classes>
+ </classes>
 </test>
  
 </suite>  

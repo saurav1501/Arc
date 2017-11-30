@@ -74,7 +74,7 @@
 <classes>
  
 
-<!-- <class name="com.arc.testcases.MyCommunities.Other.LoginCaseTest"></class>
+<class name="com.arc.testcases.MyCommunities.Other.LoginCaseTest"></class>
 <class name="com.arc.testcases.MyCommunities.Other.AddNewProjectTest"></class>
 <class name="com.arc.testcases.MyCommunities.Other.SearchProgramTest"></class>
 <class name="com.arc.testcases.MyCommunities.Other.ClickSearchedProgramTest"></class>
@@ -86,7 +86,7 @@
 <class name="com.arc.testcases.MyCommunities.Other.TrasnsportionCreateMeterTest"></class>
 <class name="com.arc.testcases.MyCommunities.Other.HumanExpCreateSurveyTest"></class>
 <class name="com.arc.testcases.MyCommunities.Other.AdditionalDeatilsCreateMeterTest"></class>
-<!-- <class name="com.arc.testcases.MyCommunities.Other.EditProjectDetailsTest"></class>
+<class name="com.arc.testcases.MyCommunities.Other.EditProjectDetailsTest"></class>
 <class name="com.arc.testcases.MyCommunities.Other.ProjectFieldVerificationTest"></class>
 <class name="com.arc.testcases.MyCommunities.Other.ProjectDetailsVerificationTest"></class>
 <class name="com.arc.testcases.MyCommunities.Other.AddTeamMemberTest"></class>
@@ -98,7 +98,7 @@
 <class name="com.arc.testcases.MyCommunities.Other.BillingDateVerificationTest"></class>
 <class name="com.arc.testcases.MyCommunities.Other.BillingRegistrationAmountVerificationTest"></class>
 <class name="com.arc.testcases.MyCommunities.Other.BillingStatusVerificationTest"></class>
- -->
+
 
 </classes>
 </test>
@@ -123,19 +123,19 @@
 <classes>
  
 
-<!-- <class name="com.arc.testcases.MyCommunities.None.LoginCaseTest"></class>
+<class name="com.arc.testcases.MyCommunities.None.LoginCaseTest"></class>
 <class name="com.arc.testcases.MyCommunities.None.AddNewProjectTest"></class>
 <class name="com.arc.testcases.MyCommunities.None.SearchProgramTest"></class>
 <class name="com.arc.testcases.MyCommunities.None.ClickSearchedProgramTest"></class>
 <class name="com.arc.testcases.MyCommunities.None.PaymentbyCCTest"></class>
- --><class name="com.arc.testcases.MyCommunities.None.EnergyMeterCreateTest"></class>
+<class name="com.arc.testcases.MyCommunities.None.EnergyMeterCreateTest"></class>
 <class name="com.arc.testcases.MyCommunities.None.WaterMeterCreateTest"></class>
 <class name="com.arc.testcases.MyCommunities.None.WasteGenerationMeterCreateTest"></class>
 <class name="com.arc.testcases.MyCommunities.None.WastediversionMeterCreateTest"></class>
 <class name="com.arc.testcases.MyCommunities.None.TrasnsportionCreateMeterTest"></class>
 <class name="com.arc.testcases.MyCommunities.None.HumanExpCreateSurveyTest"></class>
 <class name="com.arc.testcases.MyCommunities.None.AdditionalDeatilsCreateMeterTest"></class>
-<!-- <class name="com.arc.testcases.MyCommunities.None.EditProjectDetailsTest"></class>
+<class name="com.arc.testcases.MyCommunities.None.EditProjectDetailsTest"></class>
 <class name="com.arc.testcases.MyCommunities.None.ProjectFieldVerificationTest"></class>
 <class name="com.arc.testcases.MyCommunities.None.ProjectDetailsVerificationTest"></class>
 <class name="com.arc.testcases.MyCommunities.None.AddTeamMemberTest"></class>
@@ -147,7 +147,7 @@
 <class name="com.arc.testcases.MyCommunities.None.BillingDateVerificationTest"></class>
 <class name="com.arc.testcases.MyCommunities.None.BillingRegistrationAmountVerificationTest"></class>
 <class name="com.arc.testcases.MyCommunities.None.BillingStatusVerificationTest"></class>
- -->
+
 
 </classes>
 </test>

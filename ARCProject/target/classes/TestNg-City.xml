@@ -27,7 +27,7 @@
 
 
 <classes>
-<!--     
+    
 <class name="com.arc.testcases.MyCities.LEEDforCities.LoginCaseTest"/>
 <class name="com.arc.testcases.MyCities.LEEDforCities.SearchProgramTest"/>
 <class name="com.arc.testcases.MyCities.LEEDforCities.ClickSearchedProgramTest"/> 
@@ -51,7 +51,7 @@
 <class name="com.arc.testcases.MyCities.LEEDforCities.BillingDateVerificationTest"/>
 <class name="com.arc.testcases.MyCities.LEEDforCities.BillingRegistrationAmountVerificationTest"/>
 <class name="com.arc.testcases.MyCities.LEEDforCities.BillingStatusVerificationTest"/>
-<class name="com.arc.testcases.MyCities.LEEDforCities.PrecertificationPayTest"/> -->
+<class name="com.arc.testcases.MyCities.LEEDforCities.PrecertificationPayTest"/> 
  
 </classes>
 </test>
@@ -77,7 +77,7 @@
 
 
 <classes>
-  <!--   
+     
 <class name="com.arc.testcases.MyCities.None.LoginCaseTest"/>
 <class name="com.arc.testcases.MyCities.None.SearchProgramTest"/>
 <class name="com.arc.testcases.MyCities.None.ClickSearchedProgramTest"/> 
@@ -89,7 +89,7 @@
 <class name="com.arc.testcases.MyCities.None.WastediversionMeterCreateTest"></class>
 <class name="com.arc.testcases.MyCities.None.TrasnsportionCreateMeterTest"></class>
 <class name="com.arc.testcases.MyCities.None.HumanExpCreateSurveyTest"></class>
-<class name="com.arc.testcases.MyCities.None.AdditionalDeatilsCreateMeterTest"></class><!-- 
+<class name="com.arc.testcases.MyCities.None.AdditionalDeatilsCreateMeterTest"></class> 
 <class name="com.arc.testcases.MyCities.None.ProjectFieldVerificationTest"/>
 <class name="com.arc.testcases.MyCities.None.EditProjectDetailsTest"/>
 <class name="com.arc.testcases.MyCities.None.ProjectDetailsVerificationTest"/>
@@ -103,7 +103,7 @@
 
 <class name="com.arc.testcases.MyCities.None.BillingStatusVerificationTest"/>
 <class name="com.arc.testcases.MyCities.None.PerformanceReviewTest"/>
- -->
+ 
 </classes>
 </test>
  
@@ -129,7 +129,7 @@
 
 
 <classes>
-    <!--  
+      
 <class name="com.arc.testcases.MyCities.Other.LoginCaseTest"/>
 <class name="com.arc.testcases.MyCities.Other.SearchProgramTest"/>
 <class name="com.arc.testcases.MyCities.Other.ClickSearchedProgramTest"/> 
@@ -155,7 +155,7 @@
 
 <class name="com.arc.testcases.MyCities.Other.BillingStatusVerificationTest"/>
 <class name="com.arc.testcases.MyCities.Other.PerformanceReviewTest"/>
- -->
+ 
 </classes>
 </test>
  
