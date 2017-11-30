@@ -138,7 +138,6 @@ com\arc\testcases\MyCommunities\Other\LoginCaseTest.class
 com\arc\testcases\MyCities\Other\PrecertificationPayTest.class
 com\arc\testcases\MyCommunities\None\PreCertReviewTest.class
 com\arc\testcases\MyCommunities\Other\WasteGenerationMeterCreateTest.class
-com\arc\testcases\MyCities\None\VerifyRequirementsCompleteTest.class
 com\arc\testcases\MyBuildings\LEEDfortransit\EnergyFileUploadTest.class
 com\arc\ReusableMethods\ReusableMethodsPrerequisites.class
 com\arc\testcases\MyBuildings\LEEDfortransit\WasteMeterCreateTest.class
