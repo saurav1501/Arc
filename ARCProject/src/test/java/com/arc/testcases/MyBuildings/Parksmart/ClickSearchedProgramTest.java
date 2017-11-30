@@ -10,7 +10,7 @@ import com.arc.driver.CommonMethod;
 
 public class ClickSearchedProgramTest extends BaseClass {
 
-	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.Parksmart.LoginCaseTest.loginCase"})
+	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.Parksmart.LoginCaseTest.loginCaseTest"})
 	@Parameters({"rowNum" ,"loginSheet","buildingSheet"})
 	public void clickSearchedProgram(int rowNum, String loginSheet, String buildingSheet) throws IOException {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());

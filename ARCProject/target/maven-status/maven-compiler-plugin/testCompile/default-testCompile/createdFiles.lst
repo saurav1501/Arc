@@ -300,7 +300,6 @@ com\arc\testcases\MyBuildings\Other\WasteFileUpload.class
 com\arc\testcases\MyBuildings\LEEDfortransit\PrerequisitesTextFileUploadTest.class
 com\arc\testcases\MyCities\Other\BillingDateVerificationTest.class
 com\arc\testcases\MyBuildings\Parksmart\ProjectFieldVerificationTest.class
-com\arc\testcases\MyBuildings\Other\WasteReadingDateOverlappingTest.class
 com\arc\testcases\MyBuildings\LEED\PaymentbyCCTest.class
 com\arc\testcases\MyCommunities\LEEDforCommunities\EditMemberRoleManagerTest.class
 com\arc\testcases\MyBuildings\Parksmart\AddNewProjectINDTest.class
