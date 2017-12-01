@@ -82,7 +82,7 @@
 <class name="com.arc.testcases.MyCities.None.SearchProgramTest"/>
 <class name="com.arc.testcases.MyCities.None.ClickSearchedProgramTest"/> 
 <class name="com.arc.testcases.MyCities.None.AddNewProjectTest"/>
-<class name="com.arc.testcases.MyCities.None.PaymentbyCCTest"/> -->
+<class name="com.arc.testcases.MyCities.None.PaymentbyCCTest"/> 
 <class name="com.arc.testcases.MyCities.None.EnergyMeterCreateTest"></class>
 <class name="com.arc.testcases.MyCities.None.WaterMeterCreateTest"></class>
 <class name="com.arc.testcases.MyCities.None.WasteGenerationMeterCreateTest"></class>

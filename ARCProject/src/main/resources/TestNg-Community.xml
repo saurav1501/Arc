@@ -22,14 +22,14 @@
 <parameter name="teamSheet" value="BTeam"/>
 <parameter name="waterSheet" value="BWater"/>
 <parameter name="wasteSheet" value="BWaste"/>
+
 <classes>
  
-
-<!-- <class name="com.arc.testcases.MyCommunities.LEEDforCommunities.LoginCaseTest"></class>
+<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.LoginCaseTest"></class>
 <class name="com.arc.testcases.MyCommunities.LEEDforCommunities.AddNewProjectTest"></class>
 <class name="com.arc.testcases.MyCommunities.LEEDforCommunities.SearchProgramTest"></class>
 <class name="com.arc.testcases.MyCommunities.LEEDforCommunities.ClickSearchedProgramTest"></class>
-<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.PaymentbyCCTest"></class> -->
+<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.PaymentbyCCTest"></class> 
 <class name="com.arc.testcases.MyCommunities.LEEDforCommunities.EnergyMeterCreateTest"></class>
 <class name="com.arc.testcases.MyCommunities.LEEDforCommunities.WaterMeterCreateTest"></class>
 <class name="com.arc.testcases.MyCommunities.LEEDforCommunities.WasteGenerationMeterCreateTest"></class>
@@ -37,7 +37,7 @@
 <class name="com.arc.testcases.MyCommunities.LEEDforCommunities.TrasnsportionCreateMeterTest"></class>
 <class name="com.arc.testcases.MyCommunities.LEEDforCommunities.HumanExpCreateSurveyTest"></class>
 <class name="com.arc.testcases.MyCommunities.LEEDforCommunities.AdditionalDeatilsCreateMeterTest"></class>
-<!-- <class name="com.arc.testcases.MyCommunities.LEEDforCommunities.PrerequisitesAttemptTest"></class>
+<class name="com.arc.testcases.MyCommunities.LEEDforCommunities.PrerequisitesAttemptTest"></class>
 <class name="com.arc.testcases.MyCommunities.LEEDforCommunities.EditProjectDetailsTest"></class>
 <class name="com.arc.testcases.MyCommunities.LEEDforCommunities.ProjectFieldVerificationTest"></class>
 <class name="com.arc.testcases.MyCommunities.LEEDforCommunities.ProjectDetailsVerificationTest"></class>
@@ -51,7 +51,7 @@
 <class name="com.arc.testcases.MyCommunities.LEEDforCommunities.BillingRegistrationAmountVerificationTest"></class>
 <class name="com.arc.testcases.MyCommunities.LEEDforCommunities.BillingStatusVerificationTest"></class>
 
- -->
+
 </classes>
 </test>
  
@@ -71,14 +71,14 @@
 <parameter name="teamSheet" value="BTeam"/>
 <parameter name="waterSheet" value="BWater"/>
 <parameter name="wasteSheet" value="BWaste"/>
+
 <classes>
- 
 
 <class name="com.arc.testcases.MyCommunities.Other.LoginCaseTest"></class>
 <class name="com.arc.testcases.MyCommunities.Other.AddNewProjectTest"></class>
 <class name="com.arc.testcases.MyCommunities.Other.SearchProgramTest"></class>
 <class name="com.arc.testcases.MyCommunities.Other.ClickSearchedProgramTest"></class>
-<class name="com.arc.testcases.MyCommunities.Other.PaymentbyCCTest"></class> -->
+<class name="com.arc.testcases.MyCommunities.Other.PaymentbyCCTest"></class> 
 <class name="com.arc.testcases.MyCommunities.Other.EnergyMeterCreateTest"></class>
 <class name="com.arc.testcases.MyCommunities.Other.WaterMeterCreateTest"></class>
 <class name="com.arc.testcases.MyCommunities.Other.WasteGenerationMeterCreateTest"></class>
@@ -120,6 +120,7 @@
 <parameter name="teamSheet" value="BTeam"/>
 <parameter name="waterSheet" value="BWater"/>
 <parameter name="wasteSheet" value="BWaste"/>
+
 <classes>
  
 
