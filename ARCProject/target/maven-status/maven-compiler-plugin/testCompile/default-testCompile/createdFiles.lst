@@ -23,7 +23,6 @@ com\arc\testcases\MyBuildings\LEED\BasePointPdfFileUplaod.class
 com\arc\testcases\MyCities\Other\WasteGenerationMeterCreateTest.class
 com\arc\testcases\MyCities\None\PaymentbyCCTest.class
 com\arc\testcases\MyBuildings\LEED\OtherMeterCreateTest.class
-com\arc\testcases\MyCities\None\WasteMeterEditReadingTest.class
 com\arc\testcases\MyBuildings\Other\AddTeamMemberTest.class
 com\arc\testcases\MyBuildings\LEED\PrerequisitesAttemptTest.class
 com\arc\testcases\MyCommunities\LEEDforCommunities\ProjectFieldVerificationTest.class
@@ -60,14 +59,12 @@ com\arc\testcases\MyCommunities\Other\AddNewProjectTest.class
 com\arc\testcases\MyBuildings\LEEDfortransit\ETotalAnalyticsTooltipTest.class
 com\arc\testcases\LandingPage\CommunityLinkRedirectionTest.class
 com\arc\testcases\MyBuildings\Other\LoginCaseTest.class
-com\arc\testcases\MyCommunities\None\WasteMeterEditReadingTest.class
 com\arc\testcases\MyCities\None\BillingRegistrationAmountVerificationTest.class
 com\arc\testcases\MyCommunities\None\SearchProgramTest.class
 com\arc\testcases\MyCommunities\Other\InstallAllAppsTest.class
 com\arc\testcases\MyBuildings\None\WTotalAnalyticsTest.class
 com\arc\testcases\MyBuildings\LEEDfortransit\AbovegroundAddNewProjectTest.class
 com\arc\testcases\MyBuildings\None\PaymentbyCCTest.class
-com\arc\testcases\MyCities\LEEDforCities\WasteMeterEditReadingTest.class
 com\arc\testcases\MyCities\None\PerformanceReviewTest.class
 com\arc\testcases\MyBuildings\Other\BillingDateVerificationTest.class
 com\arc\testcases\MyBuildings\LEED\USBuildingLEEDv4Test.class
@@ -135,7 +132,6 @@ com\arc\testcases\MyCities\None\LoginCaseTest.class
 com\arc\testcases\MyBuildings\LEEDfortransit\BillingDateVerificationTest.class
 com\arc\testcases\MyCommunities\Other\LoginCaseTest.class
 com\arc\testcases\MyCities\Other\PrecertificationPayTest.class
-com\arc\testcases\MyCommunities\None\PreCertReviewTest.class
 com\arc\testcases\MyCommunities\Other\WasteGenerationMeterCreateTest.class
 com\arc\testcases\MyBuildings\LEEDfortransit\EnergyFileUploadTest.class
 com\arc\ReusableMethods\ReusableMethodsPrerequisites.class
@@ -148,7 +144,6 @@ com\arc\testcases\MyCommunities\LEEDforCommunities\PreCertReviewTest.class
 com\arc\testcases\MyCities\LEEDforCities\PrecertificationPayTest.class
 com\arc\testcases\MyBuildings\Other\WTotalAnalyticsTest.class
 com\arc\testcases\MyBuildings\LEEDfortransit\VerifyAgreementFileDownloadTest.class
-com\arc\testcases\MyCities\LEEDforCities\VerifyRequirementsCompleteTest.class
 com\arc\testcases\LandingPage\BuildingLinkRedirectionTest.class
 com\arc\testcases\MyCommunities\Other\AdditionalDeatilsCreateMeterTest.class
 com\arc\testcases\MyCities\Other\AdditionalDeatilsCreateMeterTest.class
@@ -168,7 +163,6 @@ com\arc\testcases\MyBuildings\None\PerformanceScoreVerificationReviewTest.class
 com\arc\testcases\MyBuildings\Other\InstallAllAppsTest.class
 com\arc\testcases\MyCommunities\None\EditMemberRoleManagerTest.class
 com\arc\testcases\MyCities\None\WaterMeterCreateTest.class
-com\arc\testcases\MyCommunities\None\VerifyRequirementsCompleteTest.class
 com\arc\testcases\MyBuildings\None\ETotalAnalyticsTest.class
 com\arc\testcases\MyBuildings\LEED\WasteReadingDateOverlappingTest.class
 com\arc\testcases\MyBuildings\None\ETotalAnalyticsTooltipTest.class
@@ -217,7 +211,6 @@ com\arc\testcases\MyCommunities\Other\PaymentbyCCTest.class
 com\arc\testcases\MyBuildings\LEED\TeamMemberCreditAssertionTest.class
 com\arc\testcases\MyBuildings\LEED\RenewableAllBaseScoreAttemptTest.class
 com\arc\testcases\MyBuildings\LEED\AddNewProjectINDTest.class
-com\arc\testcases\MyCities\Other\VerifyRequirementsCompleteTest.class
 com\arc\testcases\MyCities\None\ClickSearchedProgramTest.class
 com\arc\testcases\MyBuildings\None\ProjectDetailsVerificationTest.class
 com\arc\testcases\MyCommunities\None\VerifyAgreementFileDownloadTest.class
@@ -323,7 +316,6 @@ com\arc\testcases\MyCities\LEEDforCities\BillingRegistrationAmountVerificationTe
 com\arc\testcases\MyCommunities\None\WastediversionMeterCreateTest.class
 com\arc\testcases\MyBuildings\Parksmart\AddNewProjectTest.class
 com\arc\testcases\MyBuildings\LEEDfortransit\WasteFileUpload.class
-com\arc\testcases\MyCities\Other\WasteMeterEditReadingTest.class
 com\arc\testcases\MyBuildings\Other\WasteMeterEditReadingTest.class
 com\arc\testcases\MyCities\Other\LoginCaseTest.class
 com\arc\testcases\MyCommunities\Other\ProjectFieldVerificationTest.class
@@ -363,8 +355,6 @@ com\arc\testcases\MyCommunities\LEEDforCommunities\LoginInvaildValuesTest.class
 com\arc\testcases\MyBuildings\Parksmart\PaymentbyCCTest.class
 com\arc\testcases\MyCommunities\LEEDforCommunities\PrecertificationPayTest.class
 com\arc\testcases\MyBuildings\Other\ProjectFieldVerificationTest.class
-com\arc\testcases\MyCommunities\Other\VerifyRequirementsCompleteTest.class
-com\arc\testcases\MyCommunities\Other\PreCertReviewTest.class
 com\arc\testcases\MyCities\LEEDforCities\EnergyMeterCreateTest.class
 com\arc\testcases\MyCities\None\AdditionalDeatilsCreateMeterTest.class
 com\arc\testcases\MyBuildings\Parksmart\VerifyAgreementFileDownloadTest.class

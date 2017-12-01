@@ -44,7 +44,6 @@ C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\L
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\LEED\SearchProgramTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\None\InstallAllAppsTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\None\LoginCaseTest.java
-C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\LEEDforCities\WasteMeterEditReadingTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\None\WaterMeterCreateTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\LEED\BillingStatusVerificationTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\LEEDforCommunities\WasteGenerationMeterCreateTest.java
@@ -85,18 +84,16 @@ C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunit
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\Parksmart\LoginCaseTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\Parksmart\ManagementTotalPointTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\LandingPage\CommunityLinkRedirectionTest.java
-C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\LEEDforCities\VerifyRequirementsCompleteTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\None\TrasnsportionCreateMeterTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\None\VerifyAgreementFileDownloadTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\LEEDfortransit\TotalSocreBarTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\None\AddTeamMemberTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\None\WasteGenerationMeterCreateTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\None\EditMemberRoleManagerTest.java
-C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\None\WasteMeterEditReadingTest.java
-C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\Other\EditProjectDetailsTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\None\WasteMeterCreateTest.java
-C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\LEEDforCommunities\LoginTestBlankValuesTest.java
+C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\Other\EditProjectDetailsTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\LEED\VerifyCertificationStatusTest.java
+C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\LEEDforCommunities\LoginTestBlankValuesTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\LEEDfortransit\WasteFileUpload.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\LEEDfortransit\ClickSearchedProgramTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\None\BillingDateVerificationTest.java
@@ -151,7 +148,6 @@ C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuilding
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\ReusableMethods\ReusableMethodsManage.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\None\ClickSearchedProgramTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\Parksmart\AllInnovationTest.java
-C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\Other\VerifyRequirementsCompleteTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\LEEDfortransit\WTotalAnalyticsTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\Parksmart\ProjectDetailsDisplayTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\LEED\ModifyOccOptHrsProjectDetailsTest.java
@@ -163,7 +159,6 @@ C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunit
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\Other\ProjectDetailsVerificationTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\ReusableMethods\ReusableMethodsBasescore.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\LEEDforCommunities\PaymentbyCCTest.java
-C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\Other\VerifyRequirementsCompleteTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\LEEDforCities\ProjectFieldVerificationTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\Parksmart\ProjectDetailsVerificationTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\None\UnistallAllAppsTest.java
@@ -189,16 +184,15 @@ C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunit
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\Other\ProjectFieldVerificationTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\LEEDforCommunities\BillingStatusVerificationTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\None\AdditionalDeatilsCreateMeterTest.java
-C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\ReusableMethods\ReusableMethodsLogin.java
-C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\ReusableMethods\ReusableMethodsPrerequisites.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\LEEDforCommunities\EditProjectDetailsTest.java
+C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\ReusableMethods\ReusableMethodsPrerequisites.java
+C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\ReusableMethods\ReusableMethodsLogin.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\Other\AddTeamMemberTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\LEEDfortransit\BillingStatusVerificationTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\Parksmart\VerifyAgreementFileDownloadTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\LEEDforCities\AddNewProjectTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\Other\ProjectDetailsVerificationTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\Other\EnergyMeterCreateTest.java
-C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\Other\PreCertReviewTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\Other\PerformanceScoreVerificationReviewTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\Other\PrerequisitesAttemptTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\Other\ProjectFieldVerificationTest.java
@@ -228,7 +222,6 @@ C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuilding
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\LEED\ProjectDetailsVerificationTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\LEEDfortransit\ProjectFieldVerificationTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\None\PaymentbyCheckTest.java
-C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\Other\WasteMeterEditReadingTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\None\VerifyCertificationStatusTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\None\ClickSearchedProgramTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\Other\BillingRegistrationAmountVerificationTest.java
@@ -275,7 +268,6 @@ C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuilding
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\Parksmart\ParkingImageUploadTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\Other\EditMemberRoleManagerTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\LEED\ClickSearchedProgramTest.java
-C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\None\WasteMeterEditReadingTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\Other\WasteMeterCreateTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\None\WasteReadingDateOverlappingTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\Other\BillingStatusVerificationTest.java
@@ -297,7 +289,6 @@ C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuilding
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\Other\WaterFileUploadTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\LEEDforCommunities\AdditionalDeatilsCreateMeterTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\LEEDforCities\BillingRegistrationAmountVerificationTest.java
-C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\None\PreCertReviewTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\LEED\RenewableAllBaseScoreAttemptTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\Other\WaterMeterCreateTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\LEEDfortransit\WasteMeterCreateTest.java
@@ -326,7 +317,6 @@ C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunit
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\ReusableMethods\ReusableMethodsSearch.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\Other\AdditionalDeatilsCreateMeterTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\Other\TeamMemberCreditAssertionTest.java
-C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\None\VerifyRequirementsCompleteTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\LEED\BasePointPdfFileUplaod.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\Other\LoginCaseTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\Other\HumanExpCreateSurveyTest.java
