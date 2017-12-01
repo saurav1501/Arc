@@ -8,15 +8,14 @@ import org.openqa.selenium.By;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+
 import org.testng.Assert;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+
 
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
 import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
+
 
 public class ReusableMethodsDataInput extends BaseClass{
 
@@ -712,7 +711,7 @@ public class ReusableMethodsDataInput extends BaseClass{
     	String reading1  = data.getCellData(sheetName, "Reading1", rowNum);
     	String reading2  = data.getCellData(sheetName, "Reading2", rowNum);
     	String reading3  = data.getCellData(sheetName, "Reading3", rowNum);
-    	String reading4  = data.getCellData(sheetName, "Reading4", rowNum);
+   
     	
     	
     	CommonMethod.ArcSpecifictoggle( "CreditAction");
@@ -803,12 +802,7 @@ public void CreateOtherMeter(String param,String Metername,String MeterLocator, 
     	/*************************Reading data from excel sheet ************************************/
     	
     	String othmeterName = data.getCellData(sheetName, "Other_Meter Name", rowNum);
-    	String startDate = data.getCellData(sheetName, "Start Date", rowNum);
-    	String endDate   = data.getCellData(sheetName, "End Date", rowNum);
-    	String reading1  = data.getCellData(sheetName, "Reading1", rowNum);
-    	String reading2  = data.getCellData(sheetName, "Reading2", rowNum);
-    	String reading3  = data.getCellData(sheetName, "Reading3", rowNum);
-    	String reading4  = data.getCellData(sheetName, "Reading4", rowNum);
+    	
     	
     	
     	CommonMethod.ArcSpecifictoggle( "CreditAction");
@@ -931,7 +925,7 @@ public void CreateWaterWMeter(String param,String Metername,String MeterLocator,
 		String reading1  = data.getCellData(sheetName, "Reading1", rowNum);
 		String reading2  = data.getCellData(sheetName, "Reading2", rowNum);
 		String reading3  = data.getCellData(sheetName, "Reading3", rowNum);
-		String reading4  = data.getCellData(sheetName, "Reading4", rowNum);
+	
 	
     	CommonMethod.ArcSpecifictoggle( "CreditAction");
 		ClickDataInput();

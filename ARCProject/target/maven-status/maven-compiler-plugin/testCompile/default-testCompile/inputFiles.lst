@@ -50,7 +50,6 @@ C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunit
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\Other\InstallAllAppsTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\LEED\PaymentbyCCTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\LEEDfortransit\LoginCaseTest.java
-C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\Parksmart\AddNewProjectINDTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\None\ClickSearchedProgramTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\Other\BillingDateVerificationTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\Other\BillingStatusVerificationTest.java
@@ -190,8 +189,8 @@ C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\ReusableMethods\Reus
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\Other\AddTeamMemberTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\LEEDfortransit\BillingStatusVerificationTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\Parksmart\VerifyAgreementFileDownloadTest.java
-C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\LEEDforCities\AddNewProjectTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\Other\ProjectDetailsVerificationTest.java
+C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\LEEDforCities\AddNewProjectTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCommunities\Other\EnergyMeterCreateTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyBuildings\Other\PerformanceScoreVerificationReviewTest.java
 C:\Users\Group10\workspace\ARCProject\src\test\java\com\arc\testcases\MyCities\Other\PrerequisitesAttemptTest.java

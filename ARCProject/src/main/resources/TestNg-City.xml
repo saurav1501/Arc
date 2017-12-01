@@ -99,8 +99,6 @@
 <class name="com.arc.testcases.MyCities.None.InstallAllAppsTest"/>
 <class name="com.arc.testcases.MyCities.None.BillingDateVerificationTest"/>
 <class name="com.arc.testcases.MyCities.None.BillingRegistrationAmountVerificationTest"/>
-
-
 <class name="com.arc.testcases.MyCities.None.BillingStatusVerificationTest"/>
 <class name="com.arc.testcases.MyCities.None.PerformanceReviewTest"/>
  

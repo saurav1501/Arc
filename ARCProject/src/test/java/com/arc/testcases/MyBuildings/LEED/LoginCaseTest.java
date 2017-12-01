@@ -1,7 +1,7 @@
 package com.arc.testcases.MyBuildings.LEED;
 import java.io.IOException;
 
-import org.openqa.selenium.By;
+
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 

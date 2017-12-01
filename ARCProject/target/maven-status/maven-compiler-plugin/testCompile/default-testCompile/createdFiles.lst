@@ -293,7 +293,6 @@ com\arc\testcases\MyCities\Other\BillingDateVerificationTest.class
 com\arc\testcases\MyBuildings\Parksmart\ProjectFieldVerificationTest.class
 com\arc\testcases\MyBuildings\LEED\PaymentbyCCTest.class
 com\arc\testcases\MyCommunities\LEEDforCommunities\EditMemberRoleManagerTest.class
-com\arc\testcases\MyBuildings\Parksmart\AddNewProjectINDTest.class
 com\arc\testcases\MyBuildings\Other\VerifyAgreementFileDownloadTest.class
 com\arc\testcases\MyCities\None\PrerequisitesAttemptTest.class
 com\arc\testcases\MyBuildings\Parksmart\AllMeasuresFileUploadTest.class

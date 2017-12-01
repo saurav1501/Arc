@@ -1,40 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [SanityTestCasesSuite]">
-  <parameter name="loginSheet" value="Login"/>
   <parameter name="paymentSheet" value="Payment"/>
+  <parameter name="browserName" value="firefox"/>
+  <parameter name="wasteSheet" value="BWaste"/>
+  <parameter name="citySheet" value="NewCityProject"/>
+  <parameter name="teamSheet" value="BTeam"/>
+  <parameter name="loginSheet" value="Login"/>
+  <parameter name="parkingSheet" value="NewParkingProject"/>
   <parameter name="buildingSheet" value="NewBuildingProject"/>
   <parameter name="environment" value="staging"/>
-  <parameter name="browserName" value="firefox"/>
   <parameter name="energySheet" value="BEnergy"/>
-  <parameter name="wasteSheet" value="BWaste"/>
   <parameter name="waterSheet" value="BWater"/>
+  <parameter name="cdataInputSheet" value="CDataInput"/>
   <parameter name="rowNum" value="2"/>
-  <parameter name="teamSheet" value="BTeam"/>
   <listeners>
     <listener class-name="com.arc.driver.ExtentReportNG"/>
-    <listener class-name="com.arc.driver.RetryListener"/>
   </listeners>
-  <test name="ARCRegressionTest-Building(failed)">
+  <test name="ARCRegressionTest-LEED-for-Buildings(failed)">
     <parameter name="paymentSheet" value="Payment"/>
+    <parameter name="browserName" value="firefox"/>
+    <parameter name="wasteSheet" value="BWaste"/>
+    <parameter name="citySheet" value="NewCityProject"/>
+    <parameter name="teamSheet" value="BTeam"/>
     <parameter name="loginSheet" value="Login"/>
+    <parameter name="parkingSheet" value="NewParkingProject"/>
     <parameter name="buildingSheet" value="NewBuildingProject"/>
     <parameter name="environment" value="staging"/>
     <parameter name="energySheet" value="BEnergy"/>
-    <parameter name="browserName" value="firefox"/>
-    <parameter name="wasteSheet" value="BWaste"/>
     <parameter name="waterSheet" value="BWater"/>
-    <parameter name="teamSheet" value="BTeam"/>
+    <parameter name="cdataInputSheet" value="CDataInput"/>
     <parameter name="rowNum" value="2"/>
     <classes>
-      <class name="com.arc.testcases.MyBuildings.LEED.LoginCaseTest">
+      <class name="com.arc.testcases.MyCommunities.Other.EditMemberRoleManagerTest">
         <methods>
           <include name="setup"/>
           <include name="end"/>
-          <include name="loginCase" invocation-numbers="0 0"/>
-          <include name="teardown"/>
+          <include name="editMemberRoleManager"/>
         </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.LEED.LoginCaseTest -->
+      </class> <!-- com.arc.testcases.MyCommunities.Other.EditMemberRoleManagerTest -->
     </classes>
-  </test> <!-- ARCRegressionTest-Building(failed) -->
+  </test> <!-- ARCRegressionTest-LEED-for-Buildings(failed) -->
 </suite> <!-- Failed suite [SanityTestCasesSuite] -->

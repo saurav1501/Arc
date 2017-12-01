@@ -12,19 +12,17 @@
 
 <parameter name="browserName" value="firefox"/>
 <parameter name="environment" value="staging"/>
-<parameter name="rowNum" value="2"/>
+<parameter name="rowNum" value="3"/>
 <parameter name="loginSheet" value="Login"/>
-<parameter name="buildingSheet" value="NewBuildingProject"/>
+<parameter name="communitySheet" value="NewCommunityProject"/>
+<parameter name="cdataInputSheet" value="CDataInput"/>
 <parameter name="paymentSheet" value="Payment"/>
 <parameter name="energySheet" value="BEnergy"/>
 <parameter name="teamSheet" value="BTeam"/>
 <parameter name="waterSheet" value="BWater"/>
 <parameter name="wasteSheet" value="BWaste"/>
-<parameter name="cdataInputSheet" value="CDataInput"/>
-<parameter name="parkingSheet" value="NewParkingProject"/>
-<parameter name="citySheet" value="NewCityProject"/>
 <classes>
-
+<class name="com.arc.testcases.MyCommunities.Other.EditMemberRoleManagerTest"></class>
  
   
 </classes>

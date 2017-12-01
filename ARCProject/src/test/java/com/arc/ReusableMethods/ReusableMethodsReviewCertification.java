@@ -2,7 +2,7 @@ package com.arc.ReusableMethods;
 
 import java.io.IOException;
 
-import org.openqa.selenium.WebDriver;
+
 import org.testng.Assert;
 
 import com.arc.driver.BaseClass;

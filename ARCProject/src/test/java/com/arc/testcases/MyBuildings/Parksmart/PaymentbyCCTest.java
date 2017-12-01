@@ -2,8 +2,6 @@ package com.arc.testcases.MyBuildings.Parksmart;
 
 import java.io.IOException;
 
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -12,12 +10,12 @@ import com.arc.ReusableMethods.ReusableMethodsLogin;
 import com.arc.ReusableMethods.ReusableMethodsSearch;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
-import com.relevantcodes.extentreports.LogStatus;
+
 
 public class PaymentbyCCTest extends BaseClass {
 
 	
-	@Test //(dependsOnMethods = { "com.arc.testcases.MyBuildings.Parksmart.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.Parksmart.SearchProgramTest.searchProgramTest","com.arc.testcases.MyBuildings.Parksmart.AddNewProjectTest.addNewProjectTest" })
+	@Test (dependsOnMethods = { "com.arc.testcases.MyBuildings.Parksmart.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.Parksmart.SearchProgramTest.searchProgramTest","com.arc.testcases.MyBuildings.Parksmart.AddNewProjectTest.addNewProjectTest" })
 	@Parameters({"rowNum" ,"parkingSheet","paymentSheet","loginSheet"})
 		public void paymentbyCCTest(int rowNum, String parkingSheet, String paymentSheet, String loginSheet ) throws IOException {
 			
@@ -25,7 +23,6 @@ public class PaymentbyCCTest extends BaseClass {
 			System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 			CommonMethod.test = CommonMethod.extent.startTest("PaymentByCreditcardTest-parking", "Verifies if Payment done through creditcard is successful").assignCategory("CheckPayment");
 		    ReusableMethodsLogin reuse = new ReusableMethodsLogin();
-		    ReusableMethodsSearch reuseSearch = new ReusableMethodsSearch();
 			ReusableMethodsAddProject reuseAddProject = new ReusableMethodsAddProject();
 			ReusableMethodsSearch reusePublicSearch = new ReusableMethodsSearch();
 			try {

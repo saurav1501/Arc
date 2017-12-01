@@ -68,9 +68,7 @@ public class ReusableMethodsAddProject extends BaseClass{
 		CommonMethod.click("OwnerOrg");
 		
 		CommonMethod.click("ownerorg");
-	//	Thread.sleep(1000);
-	//	CommonMethod.testlog( "Pass", "Entering Owner Type");	
-		
+	
 		CommonMethod.testlog("Pass", "Entering Owner Organization");
 		CommonMethod.sendKeys("OwnerEmail", ownerMail);
 		CommonMethod.testlog("Pass", "Entering Owner Email");
@@ -374,9 +372,6 @@ public void AddAboveProjectLEEDfortransit(int rowNum,  String sheetName ) throws
 		String prjWeek_opr_hrs 	= data.getCellData(sheetName, "week_opr_hrs", rowNum);
 		String prjFulltime_staff= data.getCellData(sheetName, "fulltime_staff", rowNum);
 		String prjAvg_time_spent= data.getCellData(sheetName, "avg_time_spent", rowNum);
-		String prjNo_park_space = data.getCellData(sheetName, "no_park_space", rowNum);
-		String prjPark_level    = data.getCellData(sheetName, "park_level", rowNum);
-		String prjdate_comm	    = data.getCellData(sheetName, "date_comm", rowNum);
 		String ownerType   	= data.getCellData(sheetName, "Owner Type", rowNum);
 		String ownerOrg 	= data.getCellData(sheetName, "Owner Organization", rowNum);
 		String ownerCountry = data.getCellData(sheetName, "Owner Country", rowNum);
@@ -476,9 +471,6 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 	String prjWeek_opr_hrs 	= data.getCellData(sheetName, "week_opr_hrs", rowNum);
 	String prjFulltime_staff= data.getCellData(sheetName, "fulltime_staff", rowNum);
 	String prjAvg_time_spent= data.getCellData(sheetName, "avg_time_spent", rowNum);
-	String prjNo_park_space = data.getCellData(sheetName, "no_park_space", rowNum);
-	String prjPark_level    = data.getCellData(sheetName, "park_level", rowNum);
-	String prjdate_comm	    = data.getCellData(sheetName, "date_comm", rowNum);
 	String ownerType   	= data.getCellData(sheetName, "Owner Type", rowNum);
 	String ownerOrg 	= data.getCellData(sheetName, "Owner Organization", rowNum);
 	String ownerCountry = data.getCellData(sheetName, "Owner Country", rowNum);
@@ -1009,7 +1001,7 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		String prjType 		= data.getCellData(sheetName, "ProjectType", rowNum);
 		String prjRating 	= data.getCellData(sheetName, "RatingSystem", rowNum);
 		String ownerOrg 	= data.getCellData(sheetName, "OwnerOrganization", rowNum);
-		String ownerType 	= data.getCellData(sheetName, "OwnerType", rowNum);
+	
 		String ownerCountry = data.getCellData(sheetName, "OwnerCountry", rowNum);
 		String ownerMail 	= data.getCellData(sheetName, "OwnerEmail", rowNum);
 		String prjArea 		= data.getCellData(sheetName, "Area", rowNum);
@@ -1340,85 +1332,9 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		CommonMethod.testlog( "Pass", "Project details filled");
 	}
 	
-	/*public void AddProjectTransit() throws IOException, InterruptedException {
+	
 
-		clickAddProject();
-		CommonMethod.sendKeys( "ProjectName",
-				"MachineTestProject" + " " + CommonMethod.randomnumber( CommonMethod.ArcProjectIDUrl_transit));
-		CommonMethod.testlog( "Pass", "Feeding Random Unique name for Project and saving to external location");
-		CommonMethod.selectdropdownrandom( "SpaceType");
-		CommonMethod.testlog( "Pass", "Selecting Space Type");
-		CommonMethod.sendKeys( "OwnerType", "Test Owner");
-		CommonMethod.testlog( "Pass", "Entering Owner Type");
-		CommonMethod.sendKeys( "OwnerOrg", "Test Org");
-		CommonMethod.testlog( "Pass", "Entering Owner Organization");
-		CommonMethod.sendKeys( "OwnerEmail", "Test@gmail.com");
-		CommonMethod.testlog( "Pass", "Entering Owner Email");
-		CommonMethod.selectdropdown( "OwnerCountry", "United States");
-		CommonMethod.testlog( "Pass", "Entering Owner Country");
-		CommonMethod.sendKeys( "Area", "10000");
-		CommonMethod.testlog( "Pass", "Entering Gross Floor Area");
-		CommonMethod.sendKeys( "Address", "Test Address");
-		CommonMethod.testlog( "Pass", "Entering Address");
-		CommonMethod.sendKeys( "City", "Test City");
-		CommonMethod.testlog( "Pass", "Entering City");
-		CommonMethod.selectdropdown( "Country", "United States");
-		CommonMethod.testlog( "Pass", "Entering Country");
-		CommonMethod.selectdropdown( "State", "Alabama");
-		CommonMethod.testlog( "Pass", "Entering State");
-		CommonMethod.sendKeys( "ZipCode", "35005");
-		CommonMethod.testlog( "Pass", "Entering Zipcode");
-		CommonMethod.click( "AgreeTermsProgReg");
-		CommonMethod.testlog( "Pass", "Clicking on agree to terms");
-		CommonMethod.click( "NextButton");
-		CommonMethod.testlog( "Pass", "Clicking on Next button");
-		Thread.sleep(10000);
-
-	}*/
-
-	/*public void AddProjectParking() throws IOException, InterruptedException {
-
-		clickAddProject();
-		CommonMethod.sendKeys( "ProjectName",
-				"MachineTestProject" + " " + CommonMethod.randomnumber( CommonMethod.ArcProjectIDUrl_parking));
-		CommonMethod.testlog( "Pass", "Feeding Random Unique name for Project and saving to external location");
-		//CommonMethod.selectdropdownrandom( "SpaceType");
-		//CommonMethod.testlog( "Pass", "Selecting Space Type");
-		CommonMethod.sendKeys( "OwnerType", "Test Owner");
-		CommonMethod.testlog( "Pass", "Entering Owner Type");
-		CommonMethod.sendKeys( "OwnerOrg", "Test Org");
-		CommonMethod.testlog( "Pass", "Entering Owner Organization");
-		CommonMethod.sendKeys( "OwnerEmail", "Test@gmail.com");
-		CommonMethod.testlog( "Pass", "Entering Owner Email");
-		CommonMethod.selectdropdown( "OwnerCountry", "United States");
-		CommonMethod.testlog( "Pass", "Entering Owner Country");
-		CommonMethod.sendKeys( "NumParkingSpaces", "20");
-		Thread.sleep(1000);
-		CommonMethod.testlog( "Pass", "Entering No. of parking spaces");
-		CommonMethod.scrolldowntoElement( "NumParkinglevel");
-		CommonMethod.sendKeys( "NumParkinglevel", "18");
-		CommonMethod.testlog( "Pass", "Entering No. of parking Level");
-		Thread.sleep(1000);
-		CommonMethod.sendKeys( "DataCommisioned", "2015-02-04");
-		CommonMethod.testlog( "Pass", "Entering Year constructed");
-		CommonMethod.sendKeys( "Address", "Test Address");
-		CommonMethod.testlog( "Pass", "Entering Address");
-		CommonMethod.sendKeys( "City", "Test City");
-		CommonMethod.testlog( "Pass", "Entering City");
-		CommonMethod.selectdropdown( "Country", "United States");
-		CommonMethod.testlog( "Pass", "Entering Country");
-		CommonMethod.selectdropdown( "State", "Alabama");
-		CommonMethod.testlog( "Pass", "Entering State");
-		CommonMethod.sendKeys( "ZipCode", "35005");
-		CommonMethod.testlog( "Pass", "Entering Zipcode");
-		CommonMethod.click( "AgreeTermsProgReg");
-		CommonMethod.testlog( "Pass", "Clicking on agree to terms");
-		CommonMethod.click( "NextButton");
-		CommonMethod.testlog( "Pass", "Clicking on Next button");
-		Thread.sleep(10000);
-
-	}
-	*/
+	
 	public void RegformfieldvalidationParking() throws IOException, InterruptedException {
 
 		clickAddProject();
@@ -1459,7 +1375,7 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 		String country    = data.getCellData(sheetName, "Country", rowNum);
 		String state      = data.getCellData(sheetName, "State", rowNum);
 		String zip        = data.getCellData(sheetName, "Zip", rowNum);
-		String amount     = data.getCellData(sheetName, "Amount", rowNum);
+		
 		
 		CommonMethod.sendKeys( "CardName", cardName);
 		CommonMethod.testlog( "Pass", "Entering CardName");

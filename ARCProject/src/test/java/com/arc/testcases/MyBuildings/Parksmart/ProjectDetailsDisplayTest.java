@@ -4,8 +4,7 @@ package com.arc.testcases.MyBuildings.Parksmart;
 
 import java.io.IOException;
 
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
+
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -14,12 +13,12 @@ import com.arc.ReusableMethods.ReusableMethodsManage;
 import com.arc.ReusableMethods.ReusableMethodsSearch;
 import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
-import com.relevantcodes.extentreports.LogStatus;
+
 
 public class ProjectDetailsDisplayTest extends BaseClass {
 
 
-	@Test//(dependsOnMethods = { "com.arc.testcases.MyBuildings.Parksmart.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.Parksmart.SearchProgramTest.searchProgramTest","com.arc.testcases.MyBuildings.Parksmart.PaymentbyCCTest.paymentbyCCTest" })
+	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.Parksmart.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.Parksmart.SearchProgramTest.searchProgramTest","com.arc.testcases.MyBuildings.Parksmart.PaymentbyCCTest.paymentbyCCTest" })
 	@Parameters({"rowNum" ,"parkingSheet", "loginSheet" })
 	public void projectDetails(int rowNum, String parkingSheet, String loginSheet) throws IOException {
 		

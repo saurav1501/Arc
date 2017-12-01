@@ -255,8 +255,7 @@ public void VerifyProjectDetailsTransit( String sheetName, int rowNum) throws IO
 		String own_email   = data.getCellData(sheetName, "Owner Email", rowNum);
 		String own_con     = data.getCellData(sheetName, "Owner Country", rowNum);
 		String gross_area  = data.getCellData(sheetName, "Area", rowNum);
-		String opr_hrs     = data.getCellData(sheetName, "opr_hrs2", rowNum);
-		String occupancy   = data.getCellData(sheetName, "occupancy", rowNum);
+
 		
 		CommonMethod.ArcSpecifictoggle( "Manage");
 		CommonMethod.click( "Project");
