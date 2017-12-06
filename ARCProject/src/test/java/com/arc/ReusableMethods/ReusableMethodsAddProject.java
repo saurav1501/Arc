@@ -12,7 +12,7 @@ public class ReusableMethodsAddProject extends BaseClass{
 
 	public void clickAddProjectMyBuildings() throws IOException, InterruptedException {
 		CommonMethod.click("AddProjectButton");
-		CommonMethod.testlog("Pass", "Clicking on Add Project Button");
+		CommonMethod.testlog("Pass","Clicking on Add Project Button");
 		Thread.sleep(1000);
 
 	}
@@ -20,7 +20,6 @@ public class ReusableMethodsAddProject extends BaseClass{
 		CommonMethod.click("AddProjectButton");
 		CommonMethod.testlog( "Pass", "Clicking on Add Project Button");
 		Thread.sleep(1000);
-
 	}
 	public void AddProjectNoneUS(int rowNum, String sheetName) throws IOException, InterruptedException {
 		
@@ -210,8 +209,7 @@ public class ReusableMethodsAddProject extends BaseClass{
 	
 	
 	public void AddProjectLEEDUS( String sheetName,int rowNum) throws IOException, InterruptedException {
-		
-		
+			
 		String prjType 		= data.getCellData(sheetName, "Project Type", rowNum);
 		String prjRating 	= data.getCellData(sheetName, "Rating System", rowNum);
 		String ownerType 	= data.getCellData(sheetName, "Owner Type", rowNum);
@@ -685,8 +683,7 @@ public void AddUndergroundProjectLEEDfortransit(int rowNum,  String sheetName ) 
 
 	}
 	
-	public void AddProjectParksmartUS(String sheetName,int rowNum) throws IOException, InterruptedException {
-	       
+	public void AddProjectParksmartUS(String sheetName,int rowNum) throws IOException, InterruptedException {       
 		String prjType 		= data.getCellData(sheetName, "Project Type", rowNum);
 		String prjRating 	= data.getCellData(sheetName, "Rating System", rowNum);
 		String ownerOrg 	= data.getCellData(sheetName, "Owner Organization", rowNum);

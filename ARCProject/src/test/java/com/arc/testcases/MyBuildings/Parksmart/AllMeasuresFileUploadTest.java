@@ -16,7 +16,7 @@ import com.arc.driver.CommonMethod;
 public class AllMeasuresFileUploadTest extends BaseClass {
 
 	
-	@Test (dependsOnMethods = { "com.arc.testcases.MyBuildings.Parksmart.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.Parksmart.SearchProgramTest.searchProgramTest","com.arc.testcases.MyBuildings.Parksmart.PaymentbyCCTest.paymentbyCCTest" })
+	@Test  //(dependsOnMethods = { "com.arc.testcases.MyBuildings.Parksmart.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.Parksmart.SearchProgramTest.searchProgramTest","com.arc.testcases.MyBuildings.Parksmart.PaymentbyCCTest.paymentbyCCTest" })
 	@Parameters({"rowNum" ,"parkingSheet","loginSheet"})
 	public void allMeasuresFileUploadTest(int rowNum, String parkingSheet, String loginSheet) throws IOException {
 		
@@ -29,8 +29,9 @@ public class AllMeasuresFileUploadTest extends BaseClass {
 		ReusableMethodsSearch reuseSearch = new ReusableMethodsSearch();
 		
 		try {
+			reuse.LoginWithparking(rowNum, "My Parking", loginSheet);
 			
-			reuse.LoginToArc(rowNum, "My Projects",loginSheet);
+			//reuse.LoginToArc(rowNum, "My Projects",loginSheet);
 			reuseSearch.SearchProgram( data.getCellData(parkingSheet, "Project Name", rowNum));
 			reuseSearch.VerifySearchedProgram( data.getCellData(parkingSheet, "Project Name", rowNum));
 			reusePrereq.AllMeasureFileUpload("MA1Parking",47);

@@ -11,7 +11,7 @@ import com.arc.driver.BaseClass;
 import com.arc.driver.CommonMethod;
 public class UnderGroundAddNewProjectTest extends BaseClass {
 	
-	@Test(dependsOnMethods={"com.arc.testcases.MyBuildings.LEEDfortransit.LoginCaseTest.loginCase"})
+	@Test //(dependsOnMethods={"com.arc.testcases.MyBuildings.LEEDfortransit.LoginCaseTest.loginCase"})
 	@Parameters({"rowNum" ,"buildingSheet","loginSheet"})
 	public void addNewProject(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		

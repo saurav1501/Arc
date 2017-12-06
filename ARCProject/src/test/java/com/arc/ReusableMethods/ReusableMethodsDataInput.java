@@ -215,7 +215,7 @@ public class ReusableMethodsDataInput extends BaseClass{
 			String ureading5  = data.getCellData(sheetName, "ADeatailsUnitReading5", rowNum);
 			
 			
-			CommonMethod.ArcSpecifictoggle( "CreditAction");
+			CommonMethod.ArcSpecifictoggle("CreditAction");
 			ClickDataInput();
 			ClickDataInputParam(param);
 			Thread.sleep(1000);

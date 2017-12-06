@@ -15,7 +15,7 @@ public class ReusableMethodsLogin extends BaseClass {
 	// click on contact link of Home page
 	public void clickSignin() throws IOException,
 			InterruptedException {
-
+        CommonMethod.highLightElement("Login_dropdown");
 		CommonMethod.click("Login_dropdown");
 		Thread.sleep(1000);
 
@@ -31,17 +31,24 @@ public class ReusableMethodsLogin extends BaseClass {
 
 	// filling contact form
 	public void fillLoginDetails() throws IOException {
-
+        
 		CommonMethod.clear( "EmailID");
+		CommonMethod.highLightElement("EmailID");
 		CommonMethod.sendKeys("EmailID", cemail);
+		
+		
 		CommonMethod.clear("Password");
+		CommonMethod.highLightElement("Password");
 		CommonMethod.sendKeys("Password", cpass);
+		
 
 	}
 
 	// click on submit button
 	public void clickOnSubmit() throws IOException {
+		CommonMethod.highLightElement("LoginSubmit");
 		CommonMethod.click( "LoginSubmit");
+		
 		
 	}
 
@@ -159,8 +166,8 @@ public class ReusableMethodsLogin extends BaseClass {
     		clickOnSubmit();
     		CommonMethod.testlog("Info", "Clicking on submit button");
     		Thread.sleep(5000);
-    		CommonMethod.ArcSpecifictoggle("ProjectSidebar");
-		    Thread.sleep(1000);
+    		//CommonMethod.click("ProjectSidebar");
+		   // Thread.sleep(1000);
 		    CommonMethod.FluentWait("sideBarBuilding");
 		    CommonMethod.click("sideBarBuilding");
 		    CommonMethod.testlog("Pass", "Clicking on My Buildings SiderBarBuilding");

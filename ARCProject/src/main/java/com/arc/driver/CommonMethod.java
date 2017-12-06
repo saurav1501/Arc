@@ -10,6 +10,9 @@ import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.text.Format;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -34,6 +37,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.Reporter;
+
 import com.google.common.base.Function;
 import com.google.common.base.Predicate;
 import com.relevantcodes.extentreports.ExtentReports;
@@ -52,7 +57,7 @@ public class CommonMethod extends BaseClass  {
 	public static String signupID;
 	public static String screenshotfile = System.getProperty("user.dir") +"/Screenshots/";
     public static File extentconfigfile = new File(System.getProperty("user.dir") +"/src/main/resources/extent-config.xml");
-    public static String Reportfile = System.getProperty("user.dir") +"/Report/ARC-AutomationReport" + "_" + formatter.format(date) + ".html";
+    public static String Reportfile = System.getProperty("user.dir") +"/Report/Arc-AutomationReport" + "_" + formatter.format(date) + ".html";
 	public static String downloadPath = System.getProperty("user.dir") +"/Downloads/";
 	public static WebDriverWait wait = new WebDriverWait(driver, 60);
 	static WebElement element;
@@ -187,6 +192,8 @@ public class CommonMethod extends BaseClass  {
 		return findElement(objectLocater).getAttribute("value");
 		
 	}
+	
+  
 	
     public static String getattributeLabel(String objectLocater) throws IOException {
 		
@@ -395,10 +402,10 @@ public class CommonMethod extends BaseClass  {
 	   testlog("Pass", "Clicking "+ objectLocator );
    }
    
-  
-   
-    
-	
+   public static void driverwait(int timeToWaitInSec) throws InterruptedException{
+		Reporter.log("waiting for "+timeToWaitInSec+" seconds...");
+		Thread.sleep(timeToWaitInSec*1000);
+	}	
     public static void productcount(String objectLocator, int Pno, String message) throws IOException{
 		
     	List<WebElement> list = (findElements(objectLocator));
@@ -410,14 +417,9 @@ public class CommonMethod extends BaseClass  {
 		}
 		Assert.assertEquals(act, Pno, message);
 		}
-
-	
-	
-	
     public static String takeScreenshot(String methodname) throws IOException{
 		try {
-			
-		
+				
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		File Source = ts.getScreenshotAs(OutputType.FILE);
 		String Dest = screenshotfile + methodname + ".png";
@@ -915,13 +917,70 @@ public class CommonMethod extends BaseClass  {
 	
 		
 	
-	/*public WebElement find(String locator) 
-	{ 
-	WebElement loc = findElement(locator);
-	return wait.until(ExpectedConditions.visibilityOfElementLocated(loc)); 
-	} */
+	public static void highLightElement(String objectLocator) throws IOException
+	{
+	JavascriptExecutor js=(JavascriptExecutor)driver; 
+
+	js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;')", findElement(objectLocator));
+
+	try 
+	{
+	Thread.sleep(100);
+	} 
+	catch (InterruptedException e) 
+	{
+
+	System.out.println(e.getMessage());
+	} 
+
+	js.executeScript("arguments[0].setAttribute('style','border: solid 2px white');", findElement(objectLocator)); 
+
+	}
 
 
+	
+	public static void verifyLinkActive(String linkUrl)
+	{
+        try 
+        {
+           URL url = new URL(linkUrl);
+           
+           HttpURLConnection httpURLConnect=(HttpURLConnection)url.openConnection();
+           
+           httpURLConnect.setConnectTimeout(3000);
+           
+           httpURLConnect.connect();
+           
+           if(httpURLConnect.getResponseCode()==200)
+           {
+               System.out.println(linkUrl+" - "+httpURLConnect.getResponseMessage());
+            }
+          if(httpURLConnect.getResponseCode()==HttpURLConnection.HTTP_NOT_FOUND)  
+           {
+               System.out.println(linkUrl+" - "+httpURLConnect.getResponseMessage() + " - "+ HttpURLConnection.HTTP_NOT_FOUND);
+            }
+        } catch (Exception e) {
+           
+        }
+	}
+	
+	public static void impliciteWait(int timeInsec){
+		Reporter.log("waiting for page to load...");
+		try{
+		driver.manage().timeouts().implicitlyWait(timeInsec, TimeUnit.SECONDS);
+		Reporter.log("Page is loaded");
+		}
+		catch(Throwable error){
+			Reporter.log("Timeout for Page Load Request to complete after "+ timeInsec + " seconds");
+			Assert.assertTrue(false, "Timeout for page load request after "+timeInsec+" second");
+		}
+	}
+	public static void expliciteWait(WebElement element, int timeToWaitInSec) {
+		WebDriverWait wait = new WebDriverWait(driver, timeToWaitInSec);
+		wait.until(ExpectedConditions.visibilityOf(element));
+	}
+
+	
 	
 	
 	

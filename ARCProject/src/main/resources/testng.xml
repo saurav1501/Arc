@@ -4,28 +4,33 @@
 
 <listeners>
         <listener class-name="com.arc.driver.ExtentReportNG" />
-       <!--  <listener class-name="com.arc.driver.RetryListener"></listener> -->
+         <listener class-name="com.arc.driver.RetryListener"></listener> 
 </listeners>
 
+   
+<test name="ARCRegressionTest-Building">
 
- <test name="ARCRegressionTest-LEED-for-Buildings" > 
-
+<!-- pass data on below parameters before executing test suite -->
 <parameter name="browserName" value="firefox"/>
 <parameter name="environment" value="staging"/>
-<parameter name="rowNum" value="3"/>
+<parameter name="rowNum" value="2"/>
 <parameter name="loginSheet" value="Login"/>
-<parameter name="communitySheet" value="NewCommunityProject"/>
-<parameter name="cdataInputSheet" value="CDataInput"/>
+<parameter name="buildingSheet" value="NewBuildingProject"/>
 <parameter name="paymentSheet" value="Payment"/>
 <parameter name="energySheet" value="BEnergy"/>
 <parameter name="teamSheet" value="BTeam"/>
 <parameter name="waterSheet" value="BWater"/>
 <parameter name="wasteSheet" value="BWaste"/>
 <classes>
-<class name="com.arc.testcases.MyCommunities.Other.EditMemberRoleManagerTest"></class>
- 
-  
+
+<!-- <class name="com.arc.testcases.MyBuildings.None.AddNewProjectTest"></class>
+<class name="com.arc.testcases.MyBuildings.Other.AddNewProjectTest"></class> -->
+<class name="com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest"/>
+
 </classes>
 </test>
+</suite> 
+  
 
-</suite>  
+
+

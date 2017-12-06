@@ -21,13 +21,12 @@
 <parameter name="teamSheet" value="BTeam"/>
 <parameter name="waterSheet" value="BWater"/>
 <parameter name="wasteSheet" value="BWaste"/>
-
-
 <classes>
+
+<class name="com.arc.testcases.MyBuildings.LEED.USBuildingLEEDv4Test"/>
 
 </classes>
 </test>
-
 </suite> 
   
 

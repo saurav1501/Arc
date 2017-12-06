@@ -83,11 +83,11 @@ public class ReusableMethodsPrerequisites extends BaseClass {
 	}
 	
 	
-	 public void AllMeasureFileUpload(  String firstCredit, int NoOfCredits)
+	 public void AllMeasureFileUpload(String firstCredit, int NoOfCredits)
 			   throws IOException, InterruptedException {
-		      CommonMethod.ArcSpecifictoggle("ParkMeasures");
-			  CommonMethod.click( "AllMeasure");
-			  CommonMethod.click( firstCredit);
+		      CommonMethod.ArcSpecifictoggle("AllMeasure");
+			 // CommonMethod.click("AllMeasure");
+			  CommonMethod.click(firstCredit);
 			  CommonMethod.testlog( "Pass", "Clicking on Credit " + firstCredit);
 
 			  for (int i = 0; i <= NoOfCredits; i++) {
