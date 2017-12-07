@@ -3,19 +3,21 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [SanityTestCasesSuite]">
   <parameter name="loginSheet" value="Login"/>
   <parameter name="paymentSheet" value="Payment"/>
+  <parameter name="parkingSheet" value="NewParkingProject"/>
   <parameter name="buildingSheet" value="NewBuildingProject"/>
   <parameter name="environment" value="staging"/>
   <parameter name="browserName" value="firefox"/>
   <parameter name="energySheet" value="BEnergy"/>
   <parameter name="wasteSheet" value="BWaste"/>
   <parameter name="waterSheet" value="BWater"/>
-  <parameter name="rowNum" value="2"/>
+  <parameter name="rowNum" value="3"/>
   <parameter name="teamSheet" value="BTeam"/>
   <listeners>
     <listener class-name="com.arc.driver.ExtentReportNG"/>
     <listener class-name="com.arc.driver.RetryListener"/>
   </listeners>
   <test name="ARCRegressionTest-Building(failed)">
+    <parameter name="parkingSheet" value="NewParkingProject"/>
     <parameter name="paymentSheet" value="Payment"/>
     <parameter name="loginSheet" value="Login"/>
     <parameter name="buildingSheet" value="NewBuildingProject"/>
@@ -25,16 +27,24 @@
     <parameter name="wasteSheet" value="BWaste"/>
     <parameter name="waterSheet" value="BWater"/>
     <parameter name="teamSheet" value="BTeam"/>
-    <parameter name="rowNum" value="2"/>
+    <parameter name="rowNum" value="3"/>
     <classes>
-      <class name="com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest">
+      <class name="com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTest">
         <methods>
-          <include name="addNewProject" invocation-numbers="0 0"/>
           <include name="setup"/>
           <include name="end"/>
+          <include name="energyTotalAnalytics" invocation-numbers="0 0"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.arc.testcases.MyBuildings.LEEDfortransit.UnderGroundAddNewProjectTest -->
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.ETotalAnalyticsTest -->
+      <class name="com.arc.testcases.MyBuildings.LEED.CTotalAnalyticsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="end"/>
+          <include name="carbonTotal" invocation-numbers="0 0"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.arc.testcases.MyBuildings.LEED.CTotalAnalyticsTest -->
     </classes>
   </test> <!-- ARCRegressionTest-Building(failed) -->
 </suite> <!-- Failed suite [SanityTestCasesSuite] -->

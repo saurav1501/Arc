@@ -36,7 +36,7 @@ public class  EnergyCarbonConsumptionTest extends BaseClass {
 	        reuseSearch.SearchProgram("70000559");
 		 	//reuseSearch.SearchProgram( data.getCellData(buildingSheet, "Project Name", rowNum));
 			//reuseSearch.VerifySearchedProgram( data.getCellData(buildingSheet, "Project Name", rowNum));
-		     reuseManage.totalcarbonConsumpation("PTotal");
+		     reuseManage.energytotalcarbonConsumpation("PTotal");
 			
 
 		} catch (Throwable t) {

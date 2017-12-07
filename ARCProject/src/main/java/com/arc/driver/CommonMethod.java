@@ -401,7 +401,7 @@ public class CommonMethod extends BaseClass  {
 	   click(objectLocator);
 	   testlog("Pass", "Clicking "+ objectLocator );
    }
-   
+  /*----------------New Method ---------------*/
    public static void driverwait(int timeToWaitInSec) throws InterruptedException{
 		Reporter.log("waiting for "+timeToWaitInSec+" seconds...");
 		Thread.sleep(timeToWaitInSec*1000);

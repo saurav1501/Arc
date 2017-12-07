@@ -36,7 +36,7 @@ public class  ManageTransportionGoalTotalTest extends BaseClass {
 	         reuseSearch.SearchProgram("70000527");
 		 	//reuseSearch.SearchProgram( data.getCellData(buildingSheet, "Project Name", rowNum));
 			//reuseSearch.VerifySearchedProgram( data.getCellData(buildingSheet, "Project Name", rowNum));
-			reuseManage.goalCarbon(portfoliosSheet, rowNum);
+			reuseManage.goalTransport(portfoliosSheet, rowNum,"PTrasport");
 			
 
 		} catch (Throwable t) {

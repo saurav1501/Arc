@@ -20,9 +20,9 @@
 <parameter name="parkingSheet" value="NewParkingProject"/>
 
 <classes>
+<class name="com.arc.testcases.MyBuildings.Parksmart.AllManagementTotalPointTest"></class>
 
-
-<class name="com.arc.testcases.MyBuildings.Parksmart.LoginCaseTest"></class>
+<!-- <class name="com.arc.testcases.MyBuildings.Parksmart.LoginCaseTest"></class>
 <class name="com.arc.testcases.MyBuildings.Parksmart.SearchProgramTest"></class>
 <class name="com.arc.testcases.MyBuildings.Parksmart.AddNewProjectTest"></class>
 <class name="com.arc.testcases.MyBuildings.Parksmart.PaymentbyCCTest"></class>
@@ -38,7 +38,7 @@
 <class name="com.arc.testcases.MyBuildings.Parksmart.AllTechnologyandStructureDesignTest"></class>
 <class name="com.arc.testcases.MyBuildings.Parksmart.AllInnovationTest"></class> 
 <class name="com.arc.testcases.MyBuildings.Parksmart.AllMeasuresFileUploadTest"></class>
-<class name="com.arc.testcases.MyBuildings.Parksmart.ParkingImageUploadTest"></class>
+<class name="com.arc.testcases.MyBuildings.Parksmart.ParkingImageUploadTest"></class> -->
 
 </classes>
 </test>

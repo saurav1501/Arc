@@ -36,7 +36,7 @@ public class  ManageEnergyGoalTotalTest extends BaseClass {
 	         reuseSearch.SearchProgram("70000527");
 		 	//reuseSearch.SearchProgram( data.getCellData(buildingSheet, "Project Name", rowNum));
 			//reuseSearch.VerifySearchedProgram( data.getCellData(buildingSheet, "Project Name", rowNum));
-			reuseManage.goalEnergy(portfoliosSheet, rowNum,"PEnergy");
+			reuseManage.goalEnergy(portfoliosSheet, rowNum,"PGoal");
 			
 
 		} catch (Throwable t) {

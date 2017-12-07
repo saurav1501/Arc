@@ -10,7 +10,7 @@ import com.arc.driver.CommonMethod;
 
 public class AddNewProjectTest extends BaseClass {
 	
-	@Test(dependsOnMethods={"com.arc.testcases.MyBuildings.Parksmart.LoginCaseTest.loginCaseTest"})
+	@Test//(dependsOnMethods={"com.arc.testcases.MyBuildings.Parksmart.LoginCaseTest.loginCaseTest"})
 	@Parameters({"rowNum" ,"loginSheet","parkingSheet"})
 	public void addNewProjectTest(int rowNum, String loginSheet, String parkingSheet ) throws IOException {
 		

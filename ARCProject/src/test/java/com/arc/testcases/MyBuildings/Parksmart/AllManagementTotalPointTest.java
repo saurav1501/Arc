@@ -16,7 +16,7 @@ import com.arc.driver.CommonMethod;
 public class AllManagementTotalPointTest extends BaseClass {
 
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.Parksmart.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.Parksmart.SearchProgramTest.searchProgramTest","com.arc.testcases.MyBuildings.Parksmart.PaymentbyCCTest.paymentbyCCTest" })
+	@Test //(dependsOnMethods = { "com.arc.testcases.MyBuildings.Parksmart.LoginCaseTest.loginCaseTest","com.arc.testcases.MyBuildings.Parksmart.SearchProgramTest.searchProgramTest","com.arc.testcases.MyBuildings.Parksmart.PaymentbyCCTest.paymentbyCCTest" })
 	@Parameters({"rowNum" ,"parkingSheet","loginSheet"})
 	public void managementTotalPointTest(int rowNum, String parkingSheet, String loginSheet) throws IOException {
 		

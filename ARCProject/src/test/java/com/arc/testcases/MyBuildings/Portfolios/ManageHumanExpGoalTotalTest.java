@@ -36,7 +36,7 @@ public class  ManageHumanExpGoalTotalTest extends BaseClass {
 	         reuseSearch.SearchProgram("70000527");
 		 	//reuseSearch.SearchProgram( data.getCellData(buildingSheet, "Project Name", rowNum));
 			//reuseSearch.VerifySearchedProgram( data.getCellData(buildingSheet, "Project Name", rowNum));
-			reuseManage.goalCarbon(portfoliosSheet, rowNum);
+			 reuseManage.goalHumanExp(portfoliosSheet, rowNum,"PHumExp");
 			
 
 		} catch (Throwable t) {

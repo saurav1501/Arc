@@ -35,6 +35,7 @@ public class ReusableMethodsMyPortfolios extends BaseClass{
         CommonMethod.testlog("Pass", "Test started verifying carbon unit MTCO2E");
         String mtco2e = CommonMethod.getText("CMTCO2e");
         System.out.println(mtco2e);
+        CommonMethod.driverwait(1);
         Assert.assertEquals(mtco2e,cUnit);
 		CommonMethod.testlog("Pass", "Test passed verified carbon unit  MTCO2E successfully");
 		
@@ -46,7 +47,9 @@ public class ReusableMethodsMyPortfolios extends BaseClass{
 		CommonMethod.highLightElement("CarbonCProgress");
 		String replace = currentProgress.replace("%" , "");
 		double replace1=Double.parseDouble(replace);
-		double result1 =replace1-100;
+		double depercentagered=Double.parseDouble(cpReduction);
+		
+		double result1 =depercentagered -replace1;
 		//NumberFormat formatter = new result("#000.00");
 		BigDecimal result2 = new BigDecimal(result1);     
 		result2 =  result2 .setScale(2, RoundingMode.HALF_UP);
@@ -76,26 +79,28 @@ public class ReusableMethodsMyPortfolios extends BaseClass{
 		CommonMethod.testlog("Pass","Test passed verified carbon textarea successfully");		
 		
 	}
-	public void goalWaste(String sheetName, int rowNum,String pGoal) throws IOException, InterruptedException {		
+	
+	
+	/*public void goalDivertedWaste(String sheetName, int rowNum,String pGoal) throws IOException, InterruptedException {		
 
-		String cpReduction 		= data.getCellData(sheetName, "CPReduction", rowNum);
-		String cbValue 	= data.getCellData(sheetName, "CBValue", rowNum);
-		String cUnit 	= data.getCellData(sheetName, "Cunit", rowNum);
-		String ctextbox 	= data.getCellData(sheetName,"CTextBox", rowNum);	
+		String wpReduction 		= data.getCellData(sheetName, "WastePReduction", rowNum);
+		String wbValue 	= data.getCellData(sheetName, "WasteBValue", rowNum);
+		String wUnit 	= data.getCellData(sheetName, "Wasteunit", rowNum);
+		String wtextbox 	= data.getCellData(sheetName,"WasteTextBox", rowNum);	
 		CommonMethod.driverwait(1);
 		
 		CommonMethod.ArcSpecifictoggle(pGoal);
 		CommonMethod.testlog("Pass", "Filling carbon reduction percentage value");
 		CommonMethod.clear("CarbonPReduction");
-		CommonMethod.sendKeys("CarbonPReduction",cpReduction);
+		CommonMethod.sendKeys("CarbonPReduction",wpReduction);
 		CommonMethod.testlog("Pass", "Filling carbon baseline value");
 		CommonMethod.clear("CarbonBValue");
 		CommonMethod.sendKeys("CarbonBValue",cbValue);
 		   
         CommonMethod.testlog("Pass", "Test started verifying carbon unit MTCO2E");
-        String mtco2e = CommonMethod.getText("CMTCO2e");
-        System.out.println(mtco2e);
-        Assert.assertEquals(mtco2e,cUnit);
+        String lbs = CommonMethod.getText("CMTCO2e");
+        System.out.println(lbs);
+        Assert.assertEquals(lbs,cUnit);
 		CommonMethod.testlog("Pass", "Test passed verified carbon unit  MTCO2E successfully");
 		
 		CommonMethod.testlog("Pass", "Test Started Carbon differece of goal calcation");
@@ -106,7 +111,8 @@ public class ReusableMethodsMyPortfolios extends BaseClass{
 		CommonMethod.highLightElement("CarbonCProgress");
 		String replace = currentProgress.replace("%" , "");
 		double replace1=Double.parseDouble(replace);
-		double result1 =replace1-100;
+	    double depercentagered=Double.parseDouble(cpReduction);
+		double result1 =depercentagered -replace1;
 		//NumberFormat formatter = new result("#000.00");
 		BigDecimal result2 = new BigDecimal(result1);     
 		result2 =  result2 .setScale(2, RoundingMode.HALF_UP);
@@ -135,6 +141,66 @@ public class ReusableMethodsMyPortfolios extends BaseClass{
 		CommonMethod.assertcontainsattributevalue("CTextBox", ctextbox, "Not Valid");	
 		CommonMethod.testlog("Pass","Test passed verified carbon textarea successfully");		
 		
+	}*/
+	public void goalGeneratedWaste(String sheetName,int rowNum, String pGoal) throws IOException, InterruptedException {		
+
+		String wpReduction = data.getCellData(sheetName, "WastePReduction", rowNum);
+		String wbValue 	= data.getCellData(sheetName, "WasteBValue", rowNum);
+		String wUnit 	= data.getCellData(sheetName, "Wasteunit", rowNum);
+		String wtextbox = data.getCellData(sheetName,"WasteTextBox", rowNum);	
+		
+		
+		CommonMethod.ArcSpecifictoggle(pGoal);
+		CommonMethod.driverwait(1);
+		CommonMethod.testlog("Pass", "Filling carbon reduction percentage value");
+		CommonMethod.clear("GWastePReduction");
+		CommonMethod.sendKeys("GWastePReduction",wpReduction);
+		CommonMethod.testlog("Pass", "Filling carbon baseline value");
+		CommonMethod.clear("GWasteBValue");
+		CommonMethod.sendKeys("GWasteBValue",wbValue);
+		   
+        CommonMethod.testlog("Pass", "Test started verifying carbon unit MTCO2E");
+        String gal = CommonMethod.getText("GLBS");
+        System.out.println(gal);
+        Assert.assertEquals(gal,wUnit);
+		CommonMethod.testlog("Pass", "Test passed verified carbon unit  gal successfully");
+		CommonMethod.testlog("Pass", "Test Started Carbon differece of goal calcation");
+		String forntenddiffGoal = CommonMethod.getText("GWasteDFormGoal");
+		CommonMethod.highLightElement("GWasteDFormGoal");
+		String currentProgress=CommonMethod.getText("CarbonCProgress");
+		System.out.println(currentProgress);
+		CommonMethod.highLightElement("GWastePReduction");
+		String replace = currentProgress.replace("%" , "");
+		double replace1=Double.parseDouble(replace);
+	    double depercentagered=Double.parseDouble(wpReduction);
+		double result1 =depercentagered -replace1;
+		//NumberFormat formatter = new result("#000.00");
+		BigDecimal result2 = new BigDecimal(result1);     
+		result2 =  result2 .setScale(2, RoundingMode.HALF_UP);
+        String calcalteddiffGoal = result2 + " %";  
+        System.out.println(calcalteddiffGoal);  
+		Assert.assertEquals(forntenddiffGoal, calcalteddiffGoal);
+		CommonMethod.testlog("Pass", "Test passed verified differece goal successfully");
+						
+		CommonMethod.testlog("Pass","Test started verifying acheive goal in percentage");
+		String carbonGoal = CommonMethod.getText("GWasteGoal");
+        String greplace = carbonGoal.replace("%" , "");
+		double cGexpected=Double.parseDouble(greplace);
+		System.out.println(cGexpected);
+		double cGactual = 100/2;
+		System.out.println(cGactual);
+		Assert.assertEquals(cGactual, cGexpected);
+		CommonMethod.testlog("Pass","Test passed verified acheive goal percentage successfully");
+		
+		CommonMethod.testlog("Pass","Test started verifying carbon textarea");
+		CommonMethod.clear("GWasteTextBox");
+		CommonMethod.click("GWasteTextBox");
+		CommonMethod.highLightElement("GWasteTextBox");
+		CommonMethod.sendKeys("GWasteTextBox",wtextbox);
+		CommonMethod.click("CarbonCProgress");
+		CommonMethod.driverwait(2);
+		CommonMethod.assertcontainsattributevalue("GWasteTextBox", wtextbox, "Not Valid");	
+		CommonMethod.testlog("Pass","Test passed verified carbon textarea successfully");			
 	}
 	public void goalTransport(String sheetName, int rowNum,String pGoal) throws IOException, InterruptedException {		
 
@@ -319,34 +385,35 @@ public class ReusableMethodsMyPortfolios extends BaseClass{
 
 	public void goalWater(String sheetName, int rowNum,String pGoal) throws IOException, InterruptedException {		
 
-		String cpReduction 		= data.getCellData(sheetName, "CPReduction", rowNum);
-		String cbValue 	= data.getCellData(sheetName, "CBValue", rowNum);
-		String cUnit 	= data.getCellData(sheetName, "Cunit", rowNum);
-		String ctextbox 	= data.getCellData(sheetName,"CTextBox", rowNum);	
+		String wpReduction 		= data.getCellData(sheetName, "WPReduction", rowNum);
+		String wbValue 	= data.getCellData(sheetName, "WBValue", rowNum);
+		String wUnit 	= data.getCellData(sheetName, "Wunit", rowNum);
+		String wtextbox 	= data.getCellData(sheetName,"WTextBox", rowNum);	
 		CommonMethod.driverwait(1);
 		
 		CommonMethod.ArcSpecifictoggle(pGoal);
 		CommonMethod.testlog("Pass", "Filling carbon reduction percentage value");
-		CommonMethod.clear("CarbonPReduction");
-		CommonMethod.sendKeys("CarbonPReduction",cpReduction);
+		CommonMethod.clear("WaterPReduction");
+		CommonMethod.sendKeys("WaterPReduction",wpReduction);
 		CommonMethod.testlog("Pass", "Filling carbon baseline value");
-		CommonMethod.clear("CarbonBValue");
-		CommonMethod.sendKeys("CarbonBValue",cbValue);
+		CommonMethod.clear("WaterBValue");
+		CommonMethod.sendKeys("CarbonBValue",wbValue);
 		   
         CommonMethod.testlog("Pass", "Test started verifying carbon unit MTCO2E");
         String mtco2e = CommonMethod.getText("CMTCO2e");
         System.out.println(mtco2e);
-        Assert.assertEquals(mtco2e,cUnit);
+        Assert.assertEquals(mtco2e,wUnit);
 		CommonMethod.testlog("Pass", "Test passed verified carbon unit  MTCO2E successfully");
 		
 		CommonMethod.testlog("Pass", "Test Started Carbon differece of goal calcation");
-		String forntenddiffGoal = CommonMethod.getText("CDFormGoal");
-		CommonMethod.highLightElement("CDFormGoal");
-		String currentProgress=CommonMethod.getText("CarbonCProgress");
+		String forntenddiffGoal = CommonMethod.getText("WDFormGoal");
+		CommonMethod.highLightElement("WDFormGoal");
+		String currentProgress=CommonMethod.getText("WaterCProgress");
 		System.out.println(currentProgress);
-		CommonMethod.highLightElement("CarbonCProgress");
+		CommonMethod.highLightElement("WaterCProgress");
 		String replace = currentProgress.replace("%" , "");
 		double replace1=Double.parseDouble(replace);
+		
 		double result1 =replace1-100;
 		//NumberFormat formatter = new result("#000.00");
 		BigDecimal result2 = new BigDecimal(result1);     
@@ -357,7 +424,7 @@ public class ReusableMethodsMyPortfolios extends BaseClass{
 		CommonMethod.testlog("Pass", "Test passed verified differece goal successfully");
 						
 		CommonMethod.testlog("Pass","Test started verifying acheive goal in percentage");
-		String carbonGoal = CommonMethod.getText("CarbonGoal");
+		String carbonGoal = CommonMethod.getText("WaterGoal");
         String greplace = carbonGoal.replace("%" , "");
 		double cGexpected=Double.parseDouble(greplace);
 		System.out.println(cGexpected);
@@ -367,48 +434,54 @@ public class ReusableMethodsMyPortfolios extends BaseClass{
 		CommonMethod.testlog("Pass","Test passed verified acheive goal percentage successfully");
 		
 		CommonMethod.testlog("Pass","Test started verifying carbon textarea");
-		CommonMethod.clear("CTextBox");
-		CommonMethod.click("CTextBox");
-		CommonMethod.highLightElement("CTextBox");
-		CommonMethod.sendKeys("CTextBox",ctextbox);
+		CommonMethod.clear("WTextBox");
+		CommonMethod.click("WTextBox");
+		CommonMethod.highLightElement("WTextBox");
+		CommonMethod.sendKeys("WTextBox",wtextbox);
 		CommonMethod.click("CarbonCProgress");
 		CommonMethod.driverwait(2);
-		CommonMethod.assertcontainsattributevalue("CTextBox", ctextbox, "Not Valid");	
+		CommonMethod.assertcontainsattributevalue("CTextBox", wtextbox, "Not Valid");	
 		CommonMethod.testlog("Pass","Test passed verified carbon textarea successfully");		
 		
 	}
 
-	public void goalEnergy(String sheetName, int rowNum,String pGoal) throws IOException, InterruptedException {		
+	public void goalEnergy(String sheetName, int rowNum,String eGoal) throws IOException, InterruptedException {		
 
-		String cpReduction 		= data.getCellData(sheetName, "CPReduction", rowNum);
-		String cbValue 	= data.getCellData(sheetName, "CBValue", rowNum);
-		String cUnit 	= data.getCellData(sheetName, "Cunit", rowNum);
-		String ctextbox 	= data.getCellData(sheetName,"CTextBox", rowNum);	
+		String epReduction 		= data.getCellData(sheetName, "EPReduction", rowNum);
+		String ebValue 	= data.getCellData(sheetName, "EBValue", rowNum);
+		String eUnit 	= data.getCellData(sheetName, "Eunit", rowNum);
+		String etextbox = data.getCellData(sheetName,"ETextBox", rowNum);	
 		CommonMethod.driverwait(1);
 		
-		CommonMethod.ArcSpecifictoggle(pGoal);
-		CommonMethod.testlog("Pass", "Filling carbon reduction percentage value");
-		CommonMethod.clear("CarbonPReduction");
-		CommonMethod.sendKeys("CarbonPReduction",cpReduction);
-		CommonMethod.testlog("Pass", "Filling carbon baseline value");
-		CommonMethod.clear("CarbonBValue");
-		CommonMethod.sendKeys("CarbonBValue",cbValue);
-		   
-        CommonMethod.testlog("Pass", "Test started verifying carbon unit MTCO2E");
-        String mtco2e = CommonMethod.getText("CMTCO2e");
-        System.out.println(mtco2e);
-        Assert.assertEquals(mtco2e,cUnit);
-		CommonMethod.testlog("Pass", "Test passed verified carbon unit  MTCO2E successfully");
+		CommonMethod.ArcSpecifictoggle(eGoal);
+		CommonMethod.testlog("Pass", "Filling energy reduction percentage value");
+		CommonMethod.clear("EnergyPReduction");
+		CommonMethod.sendKeys("EnergyPReduction",epReduction);
+		CommonMethod.testlog("Pass", "Filling energy baseline value");
+		CommonMethod.clear("EnergyBValue");
+		CommonMethod.sendKeys("EnergyBValue",ebValue);
 		
-		CommonMethod.testlog("Pass", "Test Started Carbon differece of goal calcation");
-		String forntenddiffGoal = CommonMethod.getText("CDFormGoal");
-		CommonMethod.highLightElement("CDFormGoal");
-		String currentProgress=CommonMethod.getText("CarbonCProgress");
+		   
+        CommonMethod.testlog("Pass", "Test started verifying energy unit MTCO2E");
+        String kbtu = CommonMethod.getText("EKBTU");
+        System.out.println(kbtu);
+        CommonMethod.driverwait(2);
+        Assert.assertEquals(kbtu,eUnit);
+		CommonMethod.testlog("Pass", "Test passed verified energy unit  MTCO2E successfully");
+		
+		CommonMethod.testlog("Pass", "Test Started energy differece of goal calcation");
+		String forntenddiffGoal = CommonMethod.getText("EDFormGoal");
+		CommonMethod.highLightElement("EDFormGoal");
+		String currentProgress=CommonMethod.getText("EnergyCProgress");
 		System.out.println(currentProgress);
-		CommonMethod.highLightElement("CarbonCProgress");
+		CommonMethod.highLightElement("EnergyCProgress");
 		String replace = currentProgress.replace("%" , "");
 		double replace1=Double.parseDouble(replace);
-		double result1 =replace1-100;
+		System.out.println("Fatching replaced value");
+		System.out.println(replace);
+		double depReduction=Double.parseDouble(epReduction);
+		
+		double result1 =depReduction-replace1;
 		//NumberFormat formatter = new result("#000.00");
 		BigDecimal result2 = new BigDecimal(result1);     
 		result2 =  result2 .setScale(2, RoundingMode.HALF_UP);
@@ -418,7 +491,7 @@ public class ReusableMethodsMyPortfolios extends BaseClass{
 		CommonMethod.testlog("Pass", "Test passed verified differece goal successfully");
 						
 		CommonMethod.testlog("Pass","Test started verifying acheive goal in percentage");
-		String carbonGoal = CommonMethod.getText("CarbonGoal");
+		String carbonGoal = CommonMethod.getText("EnergyGoal");
         String greplace = carbonGoal.replace("%" , "");
 		double cGexpected=Double.parseDouble(greplace);
 		System.out.println(cGexpected);
@@ -427,19 +500,19 @@ public class ReusableMethodsMyPortfolios extends BaseClass{
 		Assert.assertEquals(cGactual, cGexpected);
 		CommonMethod.testlog("Pass","Test passed verified acheive goal percentage successfully");
 		
-		CommonMethod.testlog("Pass","Test started verifying carbon textarea");
-		CommonMethod.clear("CTextBox");
-		CommonMethod.click("CTextBox");
-		CommonMethod.highLightElement("CTextBox");
-		CommonMethod.sendKeys("CTextBox",ctextbox);
-		CommonMethod.click("CarbonCProgress");
+		CommonMethod.testlog("Pass","Test started verifying energy textarea");
+		CommonMethod.clear("ETextBox");
+		CommonMethod.click("ETextBox");
+		CommonMethod.highLightElement("ETextBox");
+		CommonMethod.sendKeys("ETextBox",etextbox);
+		CommonMethod.click("EnergyCProgress");
 		CommonMethod.driverwait(2);
-		CommonMethod.assertcontainsattributevalue("CTextBox", ctextbox, "Not Valid");	
-		CommonMethod.testlog("Pass","Test passed verified carbon textarea successfully");		
+		CommonMethod.assertcontainsattributevalue("ETextBox", etextbox, "Not Valid");	
+		CommonMethod.testlog("Pass","Test passed verified energy textarea successfully");		
 		
 	}
 
-	public void totalcarbonConsumpation(String param) throws IOException, InterruptedException {
+	public void energytotalcarbonConsumpation(String param) throws IOException, InterruptedException {
    	    CommonMethod.ArcSpecifictoggle( "PAnalytics");
    	    CommonMethod.driverwait(2);
    	    CommonMethod.click(param);

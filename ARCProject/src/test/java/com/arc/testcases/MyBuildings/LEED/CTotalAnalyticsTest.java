@@ -13,7 +13,7 @@ import com.arc.driver.CommonMethod;
 
 public class  CTotalAnalyticsTest extends BaseClass {
 	
-	@Test(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCC" })
+	@Test//(dependsOnMethods = { "com.arc.testcases.MyBuildings.LEED.LoginCaseTest.loginCase","com.arc.testcases.MyBuildings.LEED.ClickSearchedProgramTest.clickSearchedProgram","com.arc.testcases.MyBuildings.LEED.PaymentbyCCTest.paymentbyCC" })
 	@Parameters({"rowNum" ,"buildingSheet", "loginSheet" })
 	public void carbonTotal(int rowNum, String buildingSheet, String loginSheet) throws IOException {
 		
@@ -29,9 +29,9 @@ public class  CTotalAnalyticsTest extends BaseClass {
 		try {
 			
 			reuse.LoginToArc(rowNum, "My Projects",loginSheet);
-		  //  reuseSearch.VerifySearchedProgram( "1000137787");
-		 	reuseSearch.SearchProgram(data.getCellData(buildingSheet, "Project Name", rowNum));
-			reuseSearch.VerifySearchedProgram( data.getCellData(buildingSheet, "Project Name", rowNum));
+		    reuseSearch.SearchProgram( "1000137787");
+		// 	reuseSearch.SearchProgram(data.getCellData(buildingSheet, "Project Name", rowNum));
+		//  reuseSearch.VerifySearchedProgram( data.getCellData(buildingSheet, "Project Name", rowNum));
 			reuseDI.verifyCTotalProjectAnalytics("Atotal");
 			reuseDI.verifyCTotalPerSQFTAnalytics("Atotal");
 			reuseDI.verifyCTotalPerOCCAnalytics("Atotal");

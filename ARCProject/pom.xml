@@ -27,7 +27,7 @@
         <environment>${environment}</environment>
          </systemPropertyVariables>                       
           <suiteXmlFiles>
-               <suiteXmlFile>src/main/resources/testng.xml</suiteXmlFile>              
+               <suiteXmlFile>src/main/resources/TestNg-Building.xml</suiteXmlFile>              
           </suiteXmlFiles>         
         </configuration>       
       </plugin>   

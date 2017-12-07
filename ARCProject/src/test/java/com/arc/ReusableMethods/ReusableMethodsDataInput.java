@@ -694,11 +694,11 @@ public class ReusableMethodsDataInput extends BaseClass{
 	    CommonMethod.testlog( "Pass","Clicking DataInput Section "+ param);
 			
 		}
-   public void ClickAnalyticsParam( String param) throws IOException{
+   public void ClickAnalyticsParam(String param) throws IOException{
 		
-	    CommonMethod.click( param);
+	    CommonMethod.click(param);
 	    
-	    CommonMethod.testlog( "Pass","Clicking to Total "+ param);
+	    CommonMethod.testlog("Pass","Clicking to Total "+ param);
 			
 		}
     public void CreateMeter(String param,String Metername,String MeterLocator, String sheetName, int rowNum) throws IOException, InterruptedException{
@@ -1398,8 +1398,9 @@ public void CreateWaterWMeter(String param,String Metername,String MeterLocator,
    	
    }
    public void verifyEDailiyMTCO2e(String param) throws IOException, InterruptedException{
-	   	    CommonMethod.ArcSpecifictoggle( "Analytics");
-	    	ClickAnalytics();
+	   	    CommonMethod.ArcSpecifictoggle("Analytics");
+	    //	ClickAnalytics();
+	   	    CommonMethod.driverwait(2);
 	  	    ClickAnalyticsParam(param);
 	  	    Thread.sleep(2000);
 	        CommonMethod.testlog( "Pass","TEST STARTED ENERGY PROJECT(TOTAL DAILY CARBON EMISSIONS=TOTAL ANNUAL CARBON EMISSIONS/365)");
@@ -1461,7 +1462,8 @@ public void CreateWaterWMeter(String param,String Metername,String MeterLocator,
    }
    public void verifyWDailiyMTCO2e(String param) throws IOException, InterruptedException{
   	   CommonMethod.ArcSpecifictoggle( "Analytics");
-   	   ClickAnalytics();
+   	 //  ClickAnalytics();
+  	   CommonMethod.driverwait(1);
  	   ClickAnalyticsParam(param);
  	   Thread.sleep(3000);
        CommonMethod.testlog( "Pass","TEST STARTED WATER PROJECT(TOTAL DAILY CARBON EMISSIONS=TOTAL ANNUAL CARBON EMISSIONS/365)");
@@ -1583,8 +1585,9 @@ public void CreateWaterWMeter(String param,String Metername,String MeterLocator,
   	
 }
    public void verifyCTotalProjectAnalytics(String param) throws IOException, InterruptedException{
- 	    CommonMethod.ArcSpecifictoggle( "Analytics");
-    	ClickAnalytics();
+ 	    CommonMethod.ArcSpecifictoggle("Analytics");
+    //	ClickAnalytics();
+ 	    CommonMethod.driverwait(1);
 	    ClickAnalyticsParam(param);
         CommonMethod.testlog( "Pass","Verifying TOTAL ANNUAL CARBON EMISSIONS (MTCO2e): For Project");
      	String  str1=CommonMethod.getText( "CTotal");

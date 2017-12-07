@@ -22,7 +22,7 @@ public class  ManageWaterGoalTotalTest extends BaseClass {
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
 		CommonMethod.ExtentReportConfig();
 		
-		CommonMethod.test = CommonMethod.extent.startTest("ManageCarbonGoalAllModuleTest-Portfolio", "Verifies TOTAL ANNUAL CARBON EMISSIONS LEEDfortransit Successfully").assignCategory("CheckAnalytics");
+		CommonMethod.test = CommonMethod.extent.startTest("ManagWaterGoalAllModuleTest-Portfolio", "Verifies TOTAL ANNUAL CARBON EMISSIONS LEEDfortransit Successfully").assignCategory("CheckAnalytics");
     
 		ReusableMethodsLogin reuse = new ReusableMethodsLogin();
 		ReusableMethodsSearch reuseSearch = new ReusableMethodsSearch();
@@ -31,20 +31,20 @@ public class  ManageWaterGoalTotalTest extends BaseClass {
 		try {
 			
 			reuse.LoginToArc(rowNum, "My Projects", loginSheet);
-		//	String current=driver.getCurrentUrl();
-		//	CommonMethod.verifyLinkActive(current);
+			String current=driver.getCurrentUrl();
+			CommonMethod.verifyLinkActive(current);
 	         reuseSearch.SearchProgram("70000527");
 		 	//reuseSearch.SearchProgram( data.getCellData(buildingSheet, "Project Name", rowNum));
 			//reuseSearch.VerifySearchedProgram( data.getCellData(buildingSheet, "Project Name", rowNum));
-			reuseManage.goalCarbon(portfoliosSheet, rowNum,"PWater");
+			reuseManage.goalWater(portfoliosSheet, rowNum,"PGoal");
 			
 
 		} catch (Throwable t) {
 			System.out.println(t.getLocalizedMessage());
 			Error e1 = new Error(t.getMessage());
 			e1.setStackTrace(t.getStackTrace());
-			//CommonMethod.testlogError(  "<pre>" + e1.toString() + "</pre>");
-			CommonMethod.takeScreenshot( "ManageCarbonGoalTotalTest-Portfolio");
+			CommonMethod.testlogError(  "<pre>" + e1.toString() + "</pre>");
+			CommonMethod.takeScreenshot("managWaterGoalAllModuleTest-portfolio");
 			throw e1;
 		}
 	}

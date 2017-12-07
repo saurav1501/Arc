@@ -22,8 +22,6 @@
 <parameter name="wasteSheet"   value="BWaste"/>
 <classes>
  
- <!-- <class name="com.arc.testcases.MyBuildings.LEED.USBuildingLEEDv4Test"/> -->
-  
   
 <class name="com.arc.testcases.MyBuildings.LEED.LoginCaseTest"></class>
 <class name="com.arc.testcases.MyBuildings.LEED.AddNewProjectTest"></class> 
